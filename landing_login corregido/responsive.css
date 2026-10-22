@@ -1,0 +1,348 @@
+/******************************************************************* Responsive nav y header **********************************************************************/
+/* ==========================================================
+   BLOQUE R1: @media (max-width: 992px) - Tablets y pantallas medianas
+   Transiciones suaves y flexibilidad para la barra superior.
+   ========================================================== */
+@media (max-width: 992px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+  .logo-container {
+    margin-left: 0;
+  }
+  .menu {
+    gap: 1.5rem;
+  }
+  .btn-registrarse {
+    margin-left: 0;
+  }
+}
+
+/* ==========================================================
+   BLOQUE R2: @media (max-width: 768px) - Dispositivos móviles
+   Menú hamburguesa funcional con animación suave.
+   ========================================================== */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .link-registro {
+    display: none; /* Oculta el botón superior para dar espacio al menú */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* El menú se convierte en un panel lateral oculto a la izquierda */
+  .menu {
+    position: absolute;
+    top: 4.375rem; 
+    left: -100%; 
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(245, 247, 254, 0.98);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3rem;
+    gap: 2rem;
+    transition: left 0.4s ease-in-out; /* Movimiento suave al abrir */
+    border-top: 0.0625rem solid #DCE3F7;
+  }
+
+  /* Al hacer clic en la hamburguesa, el menú entra a la pantalla */
+  .menu-toggle:checked ~ .menu {
+    left: 0;
+  }
+
+  /* Animación suave: Las líneas forman una X */
+  .menu-toggle:checked ~ .hamburger .linea:nth-child(1) {
+    transform: translateY(0.6rem) rotate(45deg);
+  }
+  .menu-toggle:checked ~ .hamburger .linea:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle:checked ~ .hamburger .linea:nth-child(3) {
+    transform: translateY(-0.6rem) rotate(-45deg);
+  }
+}
+
+/********************************************************************************** Inicio responsive tarjeta **********************************************************************************************/
+/* ==========================================================
+   BLOQUE R3: @media (max-width: 992px) - Adaptación de .info_1 y .card-1
+   Cambia la distribución horizontal (flex-row) a vertical (column) 
+   para pantallas medianas y pequeñas, centrando los contenidos.
+   ========================================================== */
+@media (max-width: 992px) {
+  .info_1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 1.5rem 3rem;
+    height: auto;
+    min-height: auto;
+    gap: 3rem;
+  }
+
+  .contenido {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contenido h1 {
+    font-size: 2.5rem;
+  }
+
+  .reservar {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card-1 {
+    margin-right: 0;
+    width: 100%;
+    max-width: 26rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido h1 {
+    font-size: 2rem;
+  }
+}
+/*************************************************************************************************Fin responsive*****************************************************************************************/
+
+
+/*************************************************************************** Responsive Info 2 y Tarjeta 2 ****************************************************************************/
+/* ==========================================================
+   BLOQUE R4: @media (max-width: 992px) - Adaptación de .info_2 y .card2
+   Convierte la sección en un contenedor de columna y elimina los 
+   márgenes fijos excesivos para asegurar la adaptabilidad.
+   ========================================================== */
+@media (max-width: 992px) {
+  .info_2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1.5rem;
+    height: auto;
+    min-height: auto;
+    gap: 3rem;
+  }
+
+  .contenido1 {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contenido1 h2 {
+    margin-top: 0;
+    font-size: 2.2rem;
+  }
+
+  .card2 {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .total-badge {
+    position: relative;
+    margin-top: 1rem;
+    right: auto;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .barra2 {
+    position: static; /* Evita desbordamientos por posiciones absolutas fijas */
+    margin-top: 2rem;
+  }
+}
+/*************************************************************************** fin responsive info 2 ***********************************************************************************/
+
+
+/****************************************************************************** Responsive Info 3 ***********************************************************************************/
+/* ==========================================================
+   BLOQUE R5: @media (max-width: 992px) - Adaptación de la Sección 3
+   Reorganiza la línea de tiempo y los pasos de coordenadas absolutas 
+   y márgenes fijos a un flujo vertical limpio.
+   ========================================================== */
+@media (max-width: 992px) {
+  .info_3 {
+    height: auto;
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .contenido2 {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .contenido2 h2, 
+  .contenido2 p {
+    max-width: 100%;
+  }
+
+  .contenido2 h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+  }
+
+  .lineas {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Limpieza de posiciones manuales/absolutas de escritorio */
+  .sub1, .text1, 
+  .sub2, .text2, 
+  .sub3, .text3 {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+
+  .barra3 {
+    position: static;
+    margin-top: 3rem;
+  }
+}
+/****************************************************************************** Fin responsive info 3 *******************************************************************************/
+
+
+/********************************************************************************** Responsive Info 4 *******************************************************************************************/
+/* ==========================================================
+   BLOQUE R6: @media (max-width: 992px) - Adaptación de la Sección 4 y Tarjeta 4
+   Alinea los textos y desactiva el margen negativo de la tarjeta 
+   para que fluya de manera natural debajo del contenido.
+   ========================================================== */
+@media (max-width: 992px) {
+  .info4 {
+    height: auto;
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .contenido3 {
+    margin-left: 0;
+  }
+
+  .contenido3 h2 {
+    font-size: 2.2rem;
+    max-width: 100%;
+  }
+
+  .i1, .i2, .i3, .i4 {
+    max-width: 100% !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .card {
+    margin-left: 0;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+
+  .barra4 {
+    margin-top: 2rem;
+  }
+}
+/********************************************************************************************************************************************************************************/
+
+
+/********************************---------------------------------------------------- Responsive Info 5 ******************************************************************************/
+/* ==========================================================
+   BLOQUE R7: @media (max-width: 992px) - Adaptación de la Sección 5
+   Adapta los elementos con `float: right` y márgenes grandes a una 
+   estructura flexible centrada y vertical.
+   ========================================================== */
+@media (max-width: 992px) {
+  .info5 {
+    height: auto;
+    min-height: auto;
+    padding: 4rem 1.5rem;
+  }
+
+  .alerta {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .info5 h2 {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    font-size: 2.2rem;
+    max-width: 100%;
+  }
+
+  .info5 p {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .notificacion {
+    float: none;
+    margin-right: 0;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 26rem;
+  }
+
+  .barra5 {
+    margin-top: 3rem;
+  }
+}
+/********************************************************************************************************************************************************************************/
+
+
+/******************************************************************************** Responsive Formulario *******************************************************************************/
+/* ==========================================================
+   BLOQUE R8: @media (max-width: 768px) - Adaptación del Formulario
+   Vuelve el contenedor absoluto un bloque fluido y transforma 
+   la cuadrícula de 2 columnas en una sola columna para móviles.
+   ========================================================== */
+@media (max-width: 768px) {
+  .f1 {
+    position: relative; /* Evita superposiciones en pantallas pequeñas */
+    min-height: auto;
+    padding: 2rem 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .cuadro-formulario {
+    margin-top: 0;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    min-height: auto;
+  }
+
+  .formulario1 {
+    grid-template-columns: 1fr; /* Cambia a una sola columna */
+  }
+
+  .form1, .form2 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  #nombre, #celu {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .form3, #correo, .form4, #ciudad, 
+  .checkbox, .bt1, .tx1 {
+    grid-column: 1; /* Restablece el span para que ocupen todo el ancho disponible */
+  }
+}

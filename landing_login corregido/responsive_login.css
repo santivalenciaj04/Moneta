@@ -1,0 +1,49 @@
+/* ==========================================================
+   MEDIA QUERIES (Diseño Responsivo para Móviles)
+   ========================================================== */
+@media (max-width: 768px) {
+  /* Ocultar toda la barra de navegación */
+  nav {
+    display: none; 
+  }
+
+  /* Subir el fondo para quitar el espacio vacío que deja el nav */
+  .f1 {
+    top: 0;
+  }
+
+  /* Formulario */
+  .cuadro-formulario {
+    width: 90%;
+    padding: 2rem;
+    margin-top: 2rem;
+    min-height: auto;
+  }
+
+  .formulario1 {
+    grid-template-columns: 1fr; /* Todo el formulario pasa a 1 sola columna */
+    margin-top: 2rem;
+  }
+
+  .bt1 {
+    grid-column: 1; /* Ajusta el botón a la nueva columna única */
+  }
+
+  /* Centrar elementos que tenían márgenes muy largos */
+  .logo-f {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .texto-1 .p2 {
+    margin-left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .texto-1 .p3 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
