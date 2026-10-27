@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap');
+/* Importación de fuentes tipográficas externas desde Google Fonts */
+
+/********************************************************************** Reseteo global de estilos predeterminados ********************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+main{
+    background-color: #EDF1FD;
+}
+
+
+   BLOQUE 1: .f1 (Sección del formulario)
+   Configura el color de fondo, ancho completo, altura mínima 
+   de pantalla, margen inferior y posicionamiento absoluto.
+   ========================================================== */
+.f1 {
+  background-color:#EDF1FD;
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  position: absolute; 
+  top: 5rem;
+}
+
+/* ==========================================================
+   BLOQUE 2: .cuadro-formulario (Contenedor principal de la tarjeta del formulario)
+   Estiliza el fondo blanco, bordes redondeados pronunciados, altura 
+   flexible, ancho máximo centrado automáticamente y relleno interno.
+   ========================================================== */
+.cuadro-formulario {
+  background-color: #ffffff;
+  border-radius: 2.5rem;
+  min-height: 45rem;
+  height: 50%;
+  width: 80%;
+  max-width: 39rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+}
+
+.logo-f{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 14rem;
+    margin-top: 5rem;
+}
+
+.t1{
+    margin-left: 11rem;
+    margin-top: 2rem;
+}
+
+/* ==========================================================
+   BLOQUE 5: .formulario1 (Diseño de la cuadrícula del formulario)
+   Establece un sistema de rejilla (grid) de dos columnas con 
+   espaciados específicos y margen superior.
+   ========================================================== */
+.formulario1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.25rem;
+  row-gap: 0.5rem;
+  margin-top: 5rem;
+}
+/* ==========================================================
+   BLOQUE 12: .form3, .form4 (Etiquetas de texto de los campos inferiores)
+   Aplica un margen superior, color corporativo y tipografía Inter 
+   a las etiquetas de los campos extendidos.
+   ========================================================== */
+
+  .logo-f h2 {
+  white-space: nowrap;
+  font-family: "Space Grotesk", sans-serif;
+  color: #10173A; 
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  margin-right: -2rem;
+}
+
+
+.p1 {
+  font-family: "Inter", sans-serif;
+  color: #8b9bb4;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 20rem; 
+  margin-top: 2rem;
+  margin-left: 6rem;
+  line-height: 1.5; 
+
+}
+
+.cuadros_otp{
+display: flex;
+gap: 1rem;
+}
+
+.cuadros_otp input{
+    width: 3.5rem;
+    height: 4rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #EDF1FD;
+    border: none;
+}
+
+
+.bt1 {
+  grid-column: 1 / span 2;
+  margin-top: 1.5rem;
+  background-color: #5b7fff;
+  color: #ffffff;
+  border: none;
+  padding: 0.9rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: url('./img/gemini-svg.svg'), auto;
+  transition: background-color 0.2s ease;
+  font-family: "Inter", sans-serif;
+  width: 100%;
+}
+
+.bt1:hover {
+  background-color: #808bb4;
+}
+
+.reenviar {
+    margin-top: 1rem;
+    
+}
+
+.reenviar a{
+    text-decoration: none;
+}
