@@ -8,121 +8,7 @@
   box-sizing: border-box;
 }
 
-/************************************************************************ Barra de navegación fija superior **************************************************************************************/
-/* ==========================================================
-   BLOQUE 1: nav (Barra de navegación principal fija)
-   Fija la barra arriba de la pantalla con fondo translúcido, 
-   efecto desenfoque (blur), estructura de cuadrícula y z-index alto.
-   ========================================================== */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 10vh;
-  min-height: 4.375rem;
-  display: grid;
-  grid-template-columns: minmax(auto, 12rem) 1fr minmax(auto, 12rem);
-  align-items: center;
-  padding: 0 3.75rem;
-  border-bottom: 0.0625rem solid #DCE3F7;
-  background-color: rgba(245, 247, 254, 0.85);
-  backdrop-filter: blur(0.75rem);
-  -webkit-backdrop-filter: blur(0.75rem);
-}
 
-/* ==========================================================
-   BLOQUE 2: .logo-container (Contenedor del logotipo)
-   Alinea el icono y el texto del logo a la izquierda con un 
-   margen y separación interna definidos.
-   ========================================================== */
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  justify-self: start;
-  margin-left: 15rem;
-}
-
-/* ==========================================================
-   BLOQUE 3: .menu (Menú principal de navegación)
-   Organiza los enlaces de la barra en una lista flexible dispuesta 
-   horizontalmente y centrada en la cuadrícula.
-   ========================================================== */
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 1rem;
-  justify-self: center;
-}
-
-/* ==========================================================
-   BLOQUE 4: .logo-text (Texto del logotipo)
-   Aplica la tipografía corporativa Space Grotesk, color y tamaño 
-   adecuados para el nombre de la marca.
-   ========================================================== */
-.logo-text {
-  color: #4c5480;
-  font-size: 1.5rem;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 500;
-}
-
-
-/* ==========================================================
-   BLOQUE 5: nav a (Enlaces de la barra de navegación)
-   Configura el color, la tipografía Inter, el tamaño de texto 
-   y la transición suave para los hipervínculos del menú.
-   ========================================================== */
-nav a {
-  color: #4c5480;
-  text-decoration: none;
-  font-size: 1.3rem;
-  transition: color 0.2s ease;
-  font-family: "Inter", sans-serif;
-}
-
-/* ==========================================================
-   BLOQUE 6: nav a:hover (Efecto hover de los enlaces)
-   Cambia el color del texto a un tono más oscuro al pasar el ratón.
-   ========================================================== */
-nav a:hover {
-  color: #141415;
-}
-
-/* ==========================================================
-   BLOQUE 7: .logo (Imagen del logotipo)
-   Define la altura fija proporcional para la imagen o icono del logo.
-   ========================================================== */
-.logo {
-  height: 2.5rem;
-}
-
-.btn-registrarse {
-  justify-self: end;
-  background-color: #5b7fff;
-  color: #ffffff;
-  border: none;
-  padding: 0.9rem 1.4rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  font-family: "Inter", sans-serif;
-  margin-left: -10rem;
-}
-
-/* ==========================================================
-   BLOQUE 9: .btn-registrarse:hover (Efecto hover del botón de registro)
-   Modifica el color de fondo del botón al interactuar con él.
-   ========================================================== */
-.btn-registrarse:hover {
-  background-color: #808bb4;
-}
-
-/******************************************************************* Finaliza nav **********************************************************************/
 /******************************************************************Formulario ***************************************************************************/
 /* ==========================================================
    BLOQUE 1: .f1 (Sección del formulario)
@@ -135,7 +21,7 @@ nav a:hover {
   min-height: 100vh;
   display: block;
   position: absolute; 
-  top: 5rem;
+  top: 0rem;
 }
 
 /* ==========================================================
