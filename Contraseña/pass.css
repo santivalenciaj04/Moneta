@@ -181,6 +181,10 @@ body {
   padding: 4px;
 }
 
+#match-error {
+    display: none;
+}
+
 .toggle-password:hover {
   opacity: 0.8;
 }
