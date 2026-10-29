@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Moneta — Control de gastos personales</title>
+    <link rel="icon" type="image/svg+xml" href="img/moneta-isologo.svg">
+    <link rel="stylesheet" href="style_landing.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!---------------------------------------------------------------------------------- Empieza el header y nav ------------------------------------------------>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="./img/moneta-isologo.svg" alt="Logo Moneta" class="logo">
+                <p class="logo-text">Moneta</p>
+            </div>
+
+            <!-- INICIO MENU HAMBURGUESA (Checkbox oculto para CSS) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span class="linea"></span>
+                <span class="linea"></span>
+                <span class="linea"></span>
+            </label>
+            <!-- FIN MENU HAMBURGUESA -->
+
+            <ul class="menu">
+                <li><a href="#hormiga">El gasto hormiga</a></li>
+                <li><a href="#como-funciona">Cómo funciona</a></li>
+                <li><a href="#bolsillo-inteligente">Bolsillo inteligente</a></li>
+            </ul>
+            <a href="#formulario" class="link-registro">
+                <button class="btn-registrarse">Registrarse</button>
+            </a>
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------------------------------------Main------------------------------------------------------------------>
+    <main>
+        <!-------------------------------------------------------------------------------------info1 y tarjeta---------------------------------------------------------------->
+        <section class="info_1">
+            <div class="contenido">
+                <h1>Cada peso que gastas, queda registrado.</h1>
+                <p>Moneta es la app para llevar el control de tus finanzas personales: sube tus comprobantes de
+                    transferencia y tus tirillas de compra, y entérate exactamente en qué se te va la plata cada mes.
+                </p>
+
+                <div class="reservar">
+                    <a href="#formulario">
+                        <button class="btn-primary">Reservar mi cupo</button>
+                    </a>
+                    <a href="#como-funciona" class="btn-secundario">Ver cómo funciona</a>
+                </div>
+            </div>
+
+            <div class="card-1">
+                <div class="card-header">
+                    <span class="card-subtitle">Resumen de octubre</span>
+                    <span class="badge-status">Al día</span>
+                </div>
+
+                <div class="card-amount">
+                    <span class="amount-label">Disponible este mes</span>
+                    <h2 class="amount-val">$612.450</h2>
+                </div>
+
+                <div class="chart-bars">
+                    <div class="bar bar-30"></div>
+                    <div class="bar bar-50"></div>
+                    <div class="bar active bar-90"></div>
+                    <div class="bar bar-40"></div>
+                    <div class="bar bar-60"></div>
+                    <div class="bar active bar-80"></div>
+                    <div class="bar bar-25"></div>
+                </div>
+
+                <ul class="gastos-list">
+                    <li>
+                        <span class="dot dot-blue"></span>
+                        <span class="gasto-nombre">Tienda D1</span>
+                        <span class="gasto-monto">$8.400</span>
+                    </li>
+                    <li>
+                        <span class="dot dot-green"></span>
+                        <span class="gasto-nombre">Uber</span>
+                        <span class="gasto-monto">$12.300</span>
+                    </li>
+                    <li>
+                        <span class="dot dot-purple"></span>
+                        <span class="gasto-nombre">Café</span>
+                        <span class="gasto-monto">$4.500</span>
+                    </li>
+                </ul>
+
+                <div class="alerta-gasto">
+                    <p>3 gastos hormiga detectados esta semana — suman $27.200 en cosas pequeñas.</p>
+                </div>
+            </div>
+
+            
+        </section>
+
+        <div class="barra"></div>
+
+        <!---------------------------------------------------------------------------Fin info 2 y tarjeta2------------------------------------------------------------------>
+        <section class="info_2" id="hormiga">
+            <div class="contenido1">
+                <h2 >El gasto hormiga es el que más duele, porque no lo ves.</h2>
+                <p>
+                    Un café, una propina, una recarga, una bolsa de mecato. Cada uno parece
+                    <strong>demasiado pequeño para anotar</strong>, y por eso nunca aparece
+                    en el presupuesto — hasta que a fin de mes falta plata y nadie sabe por qué.
+                </p>
+                <p>
+                    Moneta no te deja saltarte nada: cada transferencia, cada tirilla,
+                    cada recibo se sube y se suma. Si gastaste, queda registrado.
+                </p>
+            </div>
+
+            <div class="card2">
+                
+                    <div class="card-container">
+                        <div class="chart-area">
+                            <svg class="curve-line" viewBox="0 0 400 120" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M 20 90 Q 200 10 320 60" stroke="#5c73a8" stroke-dasharray="3 4"
+                                    stroke-width="1.5" />
+                            </svg>
+
+                            <div class="dots-container">
+                                <span class="dot dot-1"></span>
+                                <span class="dot dot-2"></span>
+                                <span class="dot dot-3"></span>
+                                <span class="dot dot-4"></span>
+                                <span class="dot dot-5"></span>
+                                <span class="dot dot-6"></span>
+                                <span class="dot dot-7"></span>
+                                <span class="dot dot-8"></span>
+                            </div>
+
+                            <div class="total-badge">
+                                <span class="total-label">TOTAL</span>
+                                <span class="total-amount">$91.300</span>
+                            </div>
+
+                            <div class="base-line"></div>
+                        </div>
+                    </div>
+
+                    <p class="chart-legend">
+                        9 gastos "pequeños" en una semana, sumados en una sola cifra.
+                    </p>
+            
+            </div>
+        </section>
+
+        <div class="barra2"></div>
+
+        <!---------------------------------------------------------------------------Fin info3 y 3------------------------------------------------------------------>
+        <section class="info_3" id="como-funciona">
+            <div class="contenido2">
+                <h2 >Tres pasos, y tus finanzas dejan de ser un misterio.</h2>
+                <p>Sin categorías complicadas ni hojas de cálculo. Tú registras, Moneta organiza.</p>
+            </div>
+
+            <div class="lineas">
+                <div class="step-item">
+                    <div class="step-line"></div>
+                    <span class="step-number">01</span>
+                </div>
+                <div class="step-item">
+                    <div class="step-line"></div>
+                    <span class="step-number">02</span>
+                </div>
+                <div class="step-item">
+                    <div class="step-line"></div>
+                    <span class="step-number">03</span>
+                </div>
+            </div>
+
+            <section class="info1">
+                <h3 class="sub1">Registra cada gasto</h3>
+                <p class="text1">Apenas gastes, sube la foto del recibo, la tirilla o el comprobante de la
+                    transferencia. Toma diez segundos.</p>
+            </section>
+
+            <section class="info2">
+                <h3 class="sub2">Deja que Moneta organice</h3>
+                <p class="text2">Cada gasto se clasifica solo por categoría, para que veas de un vistazo en qué se te va
+                    la plata este mes.</p>
+            </section>
+
+            <section class="info3">
+                <h3 class="sub3">Cuida tu bolsillo</h3>
+                <p class="text3">Recibe recomendaciones sobre lo que te va sobrando y alertas antes de que tu cuenta se
+                    quede en ceros.</p>
+            </section>
+        </section>
+
+        <div class="barra3" id="bolsillo-inteligente" ></div>
+
+        <!---------------------------------------------------------------------------Fin info4 y 4------------------------------------------------------------------>
+        <section class="info4" >
+            <div class="contenido3">
+                <h2>Un bolsillo inteligente para lo que te va sobrando.</h2>
+                <p class="i1">Cuando gastas menos de lo previsto, esa diferencia no se pierde de vista: Moneta te la
+                    separa y te sugiere qué hacer con ella.</p>
+                <p class="i2">Aparta automáticamente lo que te sobró de tu presupuesto del mes.</p>
+                <p class="i3">Te recomienda si te conviene ahorrarlo, adelantar un pago o darte un gusto puntual.</p>
+                <p class="i4">Muestra tu avance hacia la meta de ahorro que tú definas.</p>
+            </div>
+
+            <article class="card">
+                <header class="card-header">
+                    <span class="card-subtitle">Bolsillo de ahorro — Vacaciones</span>
+                    <h2 class="card-amount">$487.000</h2>
+                </header>
+
+                <section class="progress-section">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" ></div>
+                    </div>
+                    <div class="progress-labels">
+                        <span class="progress-percentage">64% de la meta</span>
+                        <span class="progress-target">Meta: $760.000</span>
+                    </div>
+                </section>
+
+                <ul class="insights-list">
+                    <li class="insight-item">
+                        Este mes gastaste $38.000 menos en domicilios. Podrías moverlos al bolsillo.
+                    </li>
+                    <li class="insight-item">
+                        Te sobran 6 días de presupuesto de transporte. Vas bien.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <div class="barra4"></div>
+
+        <!---------------------------------------------------------------------------Fin info5 y tarjeta------------------------------------------------------------------>
+        <section class="info5">
+            <div class="alerta">
+                <span class="pun"></span>
+                <span>Saldo bajo</span>
+            </div>
+
+            <h2>Antes de que te quedes en ceros, te avisamos.</h2>
+            <p>Moneta vigila tu saldo disponible frente a lo que ya tienes comprometido en el mes, y te avisa a tiempo —
+                no cuando ya es tarde.</p>
+        </section>
+
+        <article class="notificacion">
+            <header class="notification-header">
+                <span class="app-name">Moneta</span>
+                <time class="notification-time">ahora</time>
+            </header>
+            <div class="notification-body">
+                <p class="notification-text">
+                    Te quedan $23.000 disponibles y aún faltan 9 días de mes. Revisa tus gastos hormiga de esta semana.
+                </p>
+            </div>
+        </article>
+
+        <div class="barra5"></div>
+
+        <!---------------------------------------------------------------------------formulario------------------------------------------------------------------>
+        <section class="f1">
+            <div class="cuadro-formulario" id="formulario">
+                <div class="titulo-sub">
+                    <h2>Empieza a inscribirte</h2>
+                    <p>Completa este formulario para reservar tu cupo. Luego, desde la app móvil terminas de crear tu
+                        usuario y tu contraseña.</p>
+                </div>
+
+            
+                <form action="url de base de" method="post" class="formulario1">
+                    
+                    <label class="form1" for="nombre">Nombre de Usuario:</label>
+                    <input type="text" id="nombre" name="data[Nombre de Usuario]" placeholder="Ej: Cristian Alvarez" required>
+
+                    <label class="form2" for="celu">Número de Celular:</label>
+                    <input type="number" id="celu" name="data[Número de Celular]" placeholder="Ej: 3008796520" required>
+
+                    <label class="form3" for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="data[email]" placeholder="Ej: moneta@gmail.com" required>
+
+                    <label class="form4" for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="data[Ciudad]" placeholder="Ej: Bello,Antioquia" required>
+
+                    <label class="checkbox">
+                        <input type="checkbox" required>
+                        <span>Acepto que Moneta guarde mis datos para crear mi cuenta y me contacte para continuar el
+                            registro en la app móvil.</span>
+                    </label>
+
+                    <button type="button" class="bt1" onclick="window.location.href='login.html'">Enviar solicitud</button>
+
+                    <span class="tx1">La contraseña se crea directamente en la app móvil, no aquí. Este formulario solo reserva tu cupo.</span>
+
+                </form>
+                
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
