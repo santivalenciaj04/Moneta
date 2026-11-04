@@ -124,7 +124,8 @@
    Convierte la sección en un contenedor de columna y elimina los 
    márgenes fijos excesivos para asegurar la adaptabilidad.
    ========================================================== */
-@media (max-width: 992px) {
+/* Se activa a partir de 75rem (1200px) o 87.5rem (1400px) para evitar la deformación */
+@media (max-width: 1400px) {
   .info_2 {
     flex-direction: column;
     justify-content: center;
@@ -148,21 +149,70 @@
 
   .card2 {
     margin-right: 0;
-    max-width: 100%;
+    width: 100%;
+    max-width: 31.25rem;
+    flex-shrink: 0;
   }
 
-  .total-badge {
+  /* Mantiene la tarjeta como el punto de referencia */
+  .card-container {
     position: relative;
-    margin-top: 1rem;
-    right: auto;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+  }
+
+  /* Ancla el cuadro de TOTAL en la esquina superior derecha dentro de la tarjeta */
+  .total-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    left: auto;
+    margin: 0;
   }
 
   .barra2 {
-    position: static; /* Evita desbordamientos por posiciones absolutas fijas */
+    position: static;
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-container {
+    padding: 1.25rem 1rem;
+  }
+
+  .total-badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    transform: scale(0.85);
+    transform-origin: top right;
+  }
+}
+
+/* Pantallas móviles muy pequeñas (hasta 360px / 22.5rem) */
+@media (max-width: 22.5rem) {
+  .info_2 {
+    padding: 2.5rem 0.75rem;
+    gap: 2rem;
+  }
+
+  .contenido1 h2 {
+    font-size: 1.75rem;
+  }
+
+  .card-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .total-badge {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    transform: scale(0.72);
+    transform-origin: top right;
+  }
+
+  .chart-legend {
+    font-size: 0.8rem;
   }
 }
 /*************************************************************************** fin responsive info 2 ***********************************************************************************/
