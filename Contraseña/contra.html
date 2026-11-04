@@ -3,18 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
   <title>Crea tu contraseña - Moneta</title>
   <link rel="stylesheet" href="pass.css">
 </head>
 <body>
 
+<<<<<<< HEAD
+  <!-- Contenedor Principal -->
+  <main class="main-container">
+
+    <!-- Logo Moneta -->
+    <div class="logo-container logo-top">
+=======
   <!-- Encabezado / Logo Moneta -->
   <header class="header">
     <div class="logo-container">
+>>>>>>> ea9e93faeb5566e290db768296ffc38f6cdb1354
       <div class="logo-icon">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="24" height="24" rx="6" fill="#1d2b53"/>
-          <path d="M7 9L12 13L17 9V15H7V9Z" fill="#10b981"/>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563eb"/>
+              <stop offset="100%" stop-color="#1e3a8a"/>
+            </linearGradient>
+          </defs>
+          <rect width="32" height="32" rx="9" fill="url(#bgGrad)"/>
+          <rect x="5" y="8" width="22" height="18" rx="4" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+          <path d="M9 21V13L13 17L17 13V21" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="18" y="3" width="8" height="6" rx="2" fill="#10b981"/>
         </svg>
       </div>
       <span class="logo-text">Moneta</span>
@@ -25,11 +45,35 @@
   <main class="main-container">
     <h1 class="title">Crea tu contraseña</h1>
 
+<<<<<<< HEAD
+    <!-- Formulario con validación nativa HTML5 -->
+    <form class="password-form" id="passwordForm">
+=======
     <form class="password-form">
+>>>>>>> ea9e93faeb5566e290db768296ffc38f6cdb1354
       
       <!-- Cuadro de Requisitos de Contraseña -->
       <div class="requirements-card">
         <ul class="requirements-list">
+<<<<<<< HEAD
+          <li class="requirement-item" id="req-length">
+            <span class="check-icon">✓</span>
+            <span>Mínimo 8 caracteres</span>
+          </li>
+          <li class="requirement-item" id="req-uppercase">
+            <span class="check-icon">✓</span>
+            <span>Una letra mayúscula (A-Z)</span>
+          </li>
+          <li class="requirement-item" id="req-lowercase">
+            <span class="check-icon">✓</span>
+            <span>Una letra minúscula (a-z)</span>
+          </li>
+          <li class="requirement-item" id="req-number">
+            <span class="check-icon">✓</span>
+            <span>Al menos un número (0-9)</span>
+          </li>
+          <li class="requirement-item special-char-item" id="req-special">
+=======
           <li class="requirement-item invalid">
             <span class="check-icon">✓</span>
             <span>Mínimo 8 caracteres</span>
@@ -47,6 +91,7 @@
             <span>Al menos un número (0-9)</span>
           </li>
           <li class="requirement-item invalid special-char-item">
+>>>>>>> ea9e93faeb5566e290db768296ffc38f6cdb1354
             <div class="special-char-label">
               <span class="check-icon">✓</span>
               <span>Un carácter especial:</span>
@@ -59,35 +104,95 @@
       </div>
 
       <!-- Campo 1: Escribe tu contraseña -->
-      <div class="input-group">
+      <div class="input-group input-wrapper">
+        <input type="checkbox" id="toggle-pass1" class="toggle-checkbox">
+        
         <input 
           type="password" 
+<<<<<<< HEAD
+          name="password" 
+          class="input-password"
+          placeholder="Escribe tu contraseña"
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>\/?]).{8,}"
+          required
+        >
+        
+        <input 
+          type="text" 
+          class="input-text"
+          placeholder="Escribe tu contraseña"
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>\/?]).{8,}"
+        >
+
+        <label for="toggle-pass1" class="toggle-label" aria-label="Mostrar u ocultar contraseña">
+          <svg class="eye-icon eye-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+=======
           placeholder="Escribe tu contraseña"
           required
         >
         <button type="button" class="toggle-password" aria-label="Mostrar u ocultar contraseña">
           <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+>>>>>>> ea9e93faeb5566e290db768296ffc38f6cdb1354
             <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
             <circle cx="12" cy="12" r="3"></circle>
           </svg>
-        </button>
+          <svg class="eye-icon eye-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 19c-7 0-10-7-10-7a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 10 7 10 7a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+            <line x1="1" y1="1" x2="23" y2="23"></line>
+          </svg>
+        </label>
       </div>
 
       <!-- Campo 2: Repite tu contraseña -->
-      <div class="input-group">
+      <div class="input-group input-wrapper">
+        <input type="checkbox" id="toggle-pass2" class="toggle-checkbox">
+
         <input 
           type="password" 
+<<<<<<< HEAD
+          name="confirmPassword" 
+          class="input-password"
+          placeholder="Repite tu contraseña"
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>\/?]).{8,}"
+          required
+        >
+
+        <input 
+          type="text" 
+          class="input-text"
+          placeholder="Repite tu contraseña"
+          minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=\[\]{};':&quot;\\|,.<>\/?]).{8,}"
+        >
+
+        <label for="toggle-pass2" class="toggle-label" aria-label="Mostrar u ocultar contraseña">
+          <svg class="eye-icon eye-on" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+=======
           placeholder="Repite tu contraseña"
           required
         >
         <button type="button" class="toggle-password" aria-label="Mostrar u ocultar contraseña">
           <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+>>>>>>> ea9e93faeb5566e290db768296ffc38f6cdb1354
             <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
             <circle cx="12" cy="12" r="3"></circle>
           </svg>
-        </button>
+          <svg class="eye-icon eye-off" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 19c-7 0-10-7-10-7a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 10 7 10 7a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path>
+            <line x1="1" y1="1" x2="23" y2="23"></line>
+          </svg>
+        </label>
       </div>
 
+<<<<<<< HEAD
+      <!-- Botón de Envío -->
+      <button type="submit" id="submitBtn" class="submit-btn">Guardar contraseña</button>
+
+=======
+>>>>>>> ea9e93faeb5566e290db768296ffc38f6cdb1354
     </form>
 
     <!-- Enlace que funciona como botón sin necesidad de JavaScript -->
@@ -96,4 +201,9 @@
 
   <footer class="footer"></footer>
 
+<<<<<<< HEAD
 </body>
+</html>
+=======
+</body>
+>>>>>>> ea9e93faeb5566e290db768296ffc38f6cdb1354
