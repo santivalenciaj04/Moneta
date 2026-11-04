@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3f5bff">
+  <title>Moneta · Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-logo" viewBox="0 0 40 40">
+      <rect x="14" y="3" width="17" height="12" rx="2" fill="#2fbf71" transform="rotate(-12 22 9)"/>
+      <rect x="4" y="11" width="32" height="25" rx="7" fill="#12286b"/>
+      <rect x="25" y="20" width="11" height="9" rx="4.5" fill="#1d3a8a"/>
+      <circle cx="30" cy="24.5" r="1.6" fill="#fff"/>
+      <path d="M10 30V20l5 6 5-6v10" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h12M9 12h12M9 18h12"/><path d="M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+    <symbol id="i-piggy" viewBox="0 0 24 24"><path d="M5 11c0-3 3-5 7-5 2 0 3.700.6 5 1.600L20 7v4l-1 1c0 1.500-.7 2.700-2 3.600V19h-3v-2h-4v2H7v-3.400C5.700 14.700 5 13 5 11z"/><path d="M15 11h.01"/><path d="M9 6.500C9 5 10 4 12 4"/></symbol>
+    <symbol id="i-coins" viewBox="0 0 24 24"><circle cx="9" cy="9" r="6"/><path d="M9 6.500v5M7.500 8h3"/><path d="M15 9.200A6 6 0 1 1 9.200 15"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.500"/><path d="M21 16l-5-5-9 9"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h13v3"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M16.500 13.500h.01"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 21h4"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 15l4-4 3 3 5-6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></symbol>
+    <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 4H5v16h4M16 8l4 4-4 4M20 12H9"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10l9-6 9 6M5 10v8M9 10v8M15 10v8M19 10v8M3 20h18"/></symbol>
+    <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.500c.7.700 1 1.500 1 2.500h6c0-1 .3-1.800 1-2.500A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18h.01"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 2 1 2 0-3 1-5 2-8z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.500 9.500a2.500 2.500 0 1 1 3.500 2.300c-.7.400-1 .9-1 1.700M12 17h.01"/></symbol>
+  </svg>
+
+  <div class="app">
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Abrir o cerrar el menú">
+
+    <header class="topbar">
+      <a class="brand" href="home.html" aria-label="Moneta, ir al inicio">
+        <svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span>Moneta</span>
+      </a>
+
+      <div class="topbar-actions">
+        <span class="greeting">Hola, Luisa</span>
+        <label class="burger" for="menu-toggle" aria-label="Menú">
+          <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+        </label>
+      </div>
+
+      <p class="date"><time datetime="2026-10-21">Miércoles, 21 de octubre de 2026</time></p>
+    </header>
+
+    <label class="overlay" for="menu-toggle" aria-hidden="true"></label>
+
+    <aside class="drawer" aria-label="Menú de navegación">
+      <div class="drawer-head">
+        <a class="brand" href="home.html" aria-label="Moneta">
+          <svg class="logo" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span>Moneta</span>
+        </a>
+        <label class="drawer-close" for="menu-toggle" aria-label="Cerrar menú">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+        </label>
+      </div>
+
+      <nav class="nav-group nav-group--main" aria-label="Opciones principales">
+        <p class="nav-title">Principal</p>
+        <a class="nav-link is-active" href="home.html" aria-current="page">
+          <svg class="icon" aria-hidden="true"><use href="#i-home"/></svg><span>Inicio</span>
+        </a>
+        <a class="nav-link" href="#movimientos">
+          <svg class="icon" aria-hidden="true"><use href="#i-list"/></svg><span>Movimientos</span>
+        </a>
+        <a class="nav-link" href="#bolsillo">
+          <svg class="icon" aria-hidden="true"><use href="#i-piggy"/></svg><span>Bolsillo inteligente</span>
+        </a>
+        <a class="nav-link" href="#hormiga">
+          <svg class="icon" aria-hidden="true"><use href="#i-coins"/></svg><span>Gastos hormiga</span>
+        </a>
+      </nav>
+
+      <nav class="nav-group" aria-label="Más opciones">
+        <p class="nav-title">Más opciones</p>
+        <a class="nav-link" href="#perfil">
+          <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg><span>Mi perfil</span>
+        </a>
+        <a class="nav-link" href="#cuentas">
+          <svg class="icon" aria-hidden="true"><use href="#i-bank"/></svg><span>Mis cuentas y bancos</span>
+        </a>
+        <a class="nav-link" href="#gastos-fijos">
+          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span>Gastos fijos</span>
+        </a>
+        <a class="nav-link" href="#metas">
+          <svg class="icon" aria-hidden="true"><use href="#i-target"/></svg><span>Metas de ahorro</span>
+        </a>
+        <a class="nav-link" href="#alertas">
+          <svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg><span>Alertas</span>
+          <span class="badge" aria-label="2 alertas nuevas">2</span>
+        </a>
+        <a class="nav-link" href="#reportes">
+          <svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg><span>Reportes y tendencias</span>
+        </a>
+        <a class="nav-link" href="#configuracion">
+          <svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg><span>Configuración</span>
+        </a>
+        <a class="nav-link" href="#ayuda">
+          <svg class="icon" aria-hidden="true"><use href="#i-help"/></svg><span>Ayuda</span>
+        </a>
+      </nav>
+
+      <div class="drawer-foot">
+        <a class="nav-link nav-link--logout" href="#salir">
+          <svg class="icon" aria-hidden="true"><use href="#i-logout"/></svg><span>Cerrar sesión</span>
+        </a>
+        <p class="slogan">tu bolsillo inteligente</p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <h1 class="visually-hidden">Inicio</h1>
+
+      <section class="actions" aria-label="Acciones rápidas">
+        <a class="btn btn--expense" href="#registrar-gasto">
+          <svg class="icon" aria-hidden="true"><use href="#i-receipt"/></svg>
+          <span>Registrar gasto</span>
+        </a>
+        <a class="btn btn--income" href="#entrada-de-dinero">
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+          <span>Entrada de dinero</span>
+        </a>
+      </section>
+
+      <section class="card balance" aria-labelledby="t-disponible">
+        <h2 class="card-title card-title--center" id="t-disponible">Disponible este mes</h2>
+        <p class="balance-amount">$612.450</p>
+
+        <p class="chip chip--expense">
+          <svg class="icon" aria-hidden="true"><use href="#i-flame"/></svg>
+          <span>Gasto del día:</span>
+          <strong>-$20.700</strong>
+        </p>
+
+        <p class="status"><span class="status-dot" aria-hidden="true"></span>Al día con tu presupuesto</p>
+
+        <dl class="mini-stats">
+          <div>
+            <dt>Ingresos</dt>
+            <dd class="pos">$1.450.000</dd>
+          </div>
+          <div>
+            <dt>Gastos</dt>
+            <dd class="neg">$837.550</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="card trend" aria-labelledby="t-tendencia">
+        <div class="card-head">
+          <h2 class="card-title" id="t-tendencia">Tendencia de gastos</h2>
+          <p class="card-total">Total: <strong>$142.100</strong></p>
+        </div>
+
+        <div class="chart" role="img" aria-label="Gastos de los últimos 7 días: jueves $7.600, viernes $42.800, sábado $15.000, domingo $13.000, lunes $31.000, martes $12.000, miércoles $20.700">
+          <ul class="y-axis" aria-hidden="true">
+            <li>$50k</li>
+            <li>$25k</li>
+            <li>$0</li>
+          </ul>
+
+          <div class="plot" aria-hidden="true">
+            <svg viewBox="0 0 700 100" preserveAspectRatio="none" focusable="false">
+              <defs>
+                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3f5bff" stop-opacity=".28"/>
+                  <stop offset="1" stop-color="#3f5bff" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <line class="grid" x1="0" y1="0" x2="700" y2="0"/>
+              <line class="grid" x1="0" y1="50" x2="700" y2="50"/>
+              <line class="grid" x1="0" y1="100" x2="700" y2="100"/>
+              <polygon class="area" points="50,84.8 150,14.4 250,70 350,74 450,38 550,76 650,58.6 650,100 50,100"/>
+              <polyline class="line" points="50,84.8 150,14.4 250,70 350,74 450,38 550,76 650,58.6"/>
+            </svg>
+            <span class="dot" style="--x:7.143;--v:15.2"></span>
+            <span class="dot dot--peak" style="--x:21.429;--v:85.6"></span>
+            <span class="dot" style="--x:35.714;--v:30"></span>
+            <span class="dot" style="--x:50;--v:26"></span>
+            <span class="dot" style="--x:64.286;--v:62"></span>
+            <span class="dot" style="--x:78.571;--v:24"></span>
+            <span class="dot dot--today" style="--x:92.857;--v:41.4"></span>
+          </div>
+
+          <ol class="x-axis" aria-hidden="true">
+            <li>JUE</li><li>VIE</li><li>SÁB</li><li>DOM</li><li>LUN</li><li>MAR</li><li class="today">MIÉ</li>
+          </ol>
+        </div>
+
+        <p class="peak">
+          <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+          <span>Pico más alto (Vie):</span>
+          <strong>$42.800</strong>
+        </p>
+      </section>
+
+      <section class="card saving" id="gastos-fijos" aria-labelledby="t-ahorro">
+        <div class="card-head">
+          <h2 class="card-title" id="t-ahorro">Ahorro para gastos fijos</h2>
+          <span class="icon-box" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg></span>
+        </div>
+
+        <p class="saving-amount"><strong>$420.000</strong> <span>de $1.250.000</span></p>
+        <div class="progress" role="progressbar" aria-label="Avance del ahorro para gastos fijos" aria-valuemin="0" aria-valuemax="100" aria-valuenow="34">
+          <span style="width:34%"></span>
+        </div>
+        <p class="saving-meta">
+          <span>34% apartado</span>
+          <span>Próximo: Arriendo · 1 nov</span>
+        </p>
+      </section>
+
+      <section class="card tip" id="bolsillo" aria-labelledby="t-tip">
+        <div class="card-head">
+          <h2 class="card-title" id="t-tip">Bolsillo inteligente</h2>
+          <span class="icon-box icon-box--green" aria-hidden="true"><svg class="icon"><use href="#i-bulb"/></svg></span>
+        </div>
+        <p class="tip-text">Este mes te están sobrando <strong>$85.000</strong> frente a tu presupuesto. Te sugerimos mover <strong>$50.000</strong> a tu ahorro y dejar <strong>$35.000</strong> para un gusto sin culpa.</p>
+        <a class="btn btn--small" href="#mover-al-bolsillo">
+          <svg class="icon" aria-hidden="true"><use href="#i-piggy"/></svg>
+          <span>Mover al bolsillo</span>
+        </a>
+      </section>
+
+      <section class="card alerts" id="alertas" aria-labelledby="t-alertas">
+        <div class="card-head">
+          <h2 class="card-title" id="t-alertas">Alertas</h2>
+          <span class="badge">2</span>
+        </div>
+        <ul class="alert-list">
+          <li class="alert alert--danger">
+            <svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>
+            <p><strong>Nequi cerca de cero.</strong> Tienes $18.300 y esta semana vencen gastos fijos.</p>
+          </li>
+          <li class="alert alert--info">
+            <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+            <p><strong>Arriendo en 11 días.</strong> Ya tienes el 34% apartado.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card accounts" id="cuentas" aria-labelledby="t-cuentas">
+        <div class="card-head">
+          <h2 class="card-title" id="t-cuentas">Mis cuentas</h2>
+          <p class="card-total">Total: <strong>$612.450</strong></p>
+        </div>
+        <ul class="account-list">
+          <li>
+            <span class="icon-box" aria-hidden="true"><svg class="icon"><use href="#i-bank"/></svg></span>
+            <div><p class="row-title">Bancolombia</p><p class="row-meta">Cuenta de ahorros</p></div>
+            <p class="row-amount">$480.150</p>
+          </li>
+          <li>
+            <span class="icon-box" aria-hidden="true"><svg class="icon"><use href="#i-wallet"/></svg></span>
+            <div><p class="row-title">Nequi</p><p class="row-meta">Billetera digital</p></div>
+            <p class="row-amount row-amount--low">$18.300</p>
+          </li>
+          <li>
+            <span class="icon-box" aria-hidden="true"><svg class="icon"><use href="#i-coins"/></svg></span>
+            <div><p class="row-title">Efectivo</p><p class="row-meta">En mano</p></div>
+            <p class="row-amount">$114.000</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card moves" id="movimientos" aria-labelledby="t-movs">
+        <div class="card-head">
+          <h2 class="card-title" id="t-movs">Últimos movimientos</h2>
+          <a class="link" href="#movimientos-todos">Ver todos</a>
+        </div>
+        <ul class="tx-list">
+          <li>
+            <span class="icon-box icon-box--red" aria-hidden="true"><svg class="icon"><use href="#i-coins"/></svg></span>
+            <div><p class="row-title">Almuerzo corrientazo</p><p class="row-meta">Hoy · Efectivo · con tirilla</p></div>
+            <p class="row-amount neg">-$11.800</p>
+          </li>
+          <li>
+            <span class="icon-box icon-box--red" aria-hidden="true"><svg class="icon"><use href="#i-coins"/></svg></span>
+            <div><p class="row-title">Tinto y pan</p><p class="row-meta">Hoy · Efectivo · hormiga</p></div>
+            <p class="row-amount neg">-$6.200</p>
+          </li>
+          <li>
+            <span class="icon-box icon-box--red" aria-hidden="true"><svg class="icon"><use href="#i-list"/></svg></span>
+            <div><p class="row-title">Transporte</p><p class="row-meta">Hoy · Nequi</p></div>
+            <p class="row-amount neg">-$2.700</p>
+          </li>
+          <li>
+            <span class="icon-box icon-box--red" aria-hidden="true"><svg class="icon"><use href="#i-receipt"/></svg></span>
+            <div><p class="row-title">Domicilio</p><p class="row-meta">Ayer · Bancolombia · con comprobante</p></div>
+            <p class="row-amount neg">-$12.000</p>
+          </li>
+          <li>
+            <span class="icon-box icon-box--green" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+            <div><p class="row-title">Pago quincena</p><p class="row-meta">15 oct · Bancolombia</p></div>
+            <p class="row-amount pos">+$725.000</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card ants" id="hormiga" aria-labelledby="t-hormiga">
+        <div class="card-head">
+          <h2 class="card-title" id="t-hormiga">Gastos hormiga</h2>
+          <span class="icon-box icon-box--red" aria-hidden="true"><svg class="icon"><use href="#i-coins"/></svg></span>
+        </div>
+        <p class="ants-summary"><strong>$38.400</strong> esta semana <span>· 27% de tus gastos</span></p>
+        <ul class="bar-list">
+          <li>
+            <p><span>Café y tinto</span><strong>$14.600</strong></p>
+            <div class="bar"><span style="width:100%"></span></div>
+          </li>
+          <li>
+            <p><span>Snacks y dulces</span><strong>$12.200</strong></p>
+            <div class="bar"><span style="width:84%"></span></div>
+          </li>
+          <li>
+            <p><span>Transporte menor</span><strong>$11.600</strong></p>
+            <div class="bar"><span style="width:79%"></span></div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Navegación principal">
+      <a class="bottom-link is-active" href="home.html" aria-current="page">
+        <span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg></span>
+        <span class="label">Inicio</span>
+      </a>
+      <a class="bottom-link" href="#movimientos">
+        <span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-list"/></svg></span>
+        <span class="label">Movimientos</span>
+      </a>
+      <a class="bottom-link" href="#bolsillo">
+        <span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-piggy"/></svg></span>
+        <span class="label">Bolsillo inteligente</span>
+      </a>
+      <a class="bottom-link" href="#hormiga">
+        <span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-coins"/></svg></span>
+        <span class="label">Gastos hormiga</span>
+      </a>
+    </nav>
+
+    <div class="modal" id="registrar-gasto" role="dialog" aria-modal="true" aria-labelledby="t-modal">
+      <a class="modal-backdrop" href="#" aria-label="Cerrar ventana" tabindex="-1"></a>
+
+      <form class="sheet" action="#" method="get">
+        <div class="sheet-head">
+          <div>
+            <h2 id="t-modal">Registrar gasto</h2>
+            <p>Que no se quede ningún peso por fuera.</p>
+          </div>
+          <a class="sheet-close" href="#" aria-label="Cerrar">
+            <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+          </a>
+        </div>
+
+        <input class="mode" type="radio" name="modo" id="mode-write" checked>
+        <input class="mode" type="radio" name="modo" id="mode-voice">
+
+        <div class="tabs" role="presentation">
+          <label for="mode-write">
+            <svg class="icon" aria-hidden="true"><use href="#i-list"/></svg><span>Escribirlo</span>
+          </label>
+          <label for="mode-voice">
+            <svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg><span>Nota de voz</span>
+          </label>
+        </div>
+
+        <div class="panel panel-write">
+          <label class="field" for="f-desc">
+            <span class="field-label">¿En qué gastaste?</span>
+            <input id="f-desc" name="descripcion" type="text" placeholder="Ej: Almuerzo, tinto, domicilio…" autocomplete="off">
+          </label>
+        </div>
+
+        <div class="panel panel-voice">
+          <button class="mic-btn" type="button" aria-label="Grabar nota de voz">
+            <svg class="icon" aria-hidden="true"><use href="#i-mic"/></svg>
+          </button>
+          <div class="wave" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="voice-hint hint-idle">Toca el micrófono y cuéntanos tu gasto.<br><em>“Gasté 12 mil en un tinto con pan en efectivo”</em></p>
+          <p class="voice-hint hint-rec">Escuchando… toca de nuevo para terminar.</p>
+        </div>
+
+        <div class="fields">
+          <label class="field field--amount" for="f-monto">
+            <span class="field-label">Monto</span>
+            <span class="money"><b>$</b><input id="f-monto" name="monto" type="text" inputmode="numeric" placeholder="0" autocomplete="off"></span>
+          </label>
+
+          <label class="field" for="f-fecha">
+            <span class="field-label">Fecha</span>
+            <input id="f-fecha" name="fecha" type="date" value="2026-10-21">
+          </label>
+
+          <label class="field" for="f-categoria">
+            <span class="field-label">Categoría</span>
+            <select id="f-categoria" name="categoria">
+              <option>Alimentación</option>
+              <option>Transporte</option>
+              <option>Hogar y servicios</option>
+              <option>Salud</option>
+              <option>Educación</option>
+              <option>Ocio y salidas</option>
+              <option>Compras</option>
+              <option>Otros</option>
+            </select>
+          </label>
+
+          <label class="field" for="f-cuenta">
+            <span class="field-label">Pagado con</span>
+            <select id="f-cuenta" name="cuenta">
+              <option>Bancolombia</option>
+              <option>Nequi</option>
+              <option>Efectivo</option>
+            </select>
+          </label>
+        </div>
+
+        <label class="check" for="f-hormiga">
+          <input id="f-hormiga" name="hormiga" type="checkbox">
+          <span class="check-box" aria-hidden="true"></span>
+          <span>Es un gasto hormiga <small>(pequeño y frecuente)</small></span>
+        </label>
+
+        <fieldset class="upload">
+          <legend class="field-label">Factura o comprobante</legend>
+          <div class="upload-grid">
+            <label class="upload-btn" for="f-foto">
+              <svg class="icon" aria-hidden="true"><use href="#i-receipt"/></svg>
+              <span>Tomar foto</span>
+              <small>Tirilla o recibo</small>
+              <input id="f-foto" name="foto" type="file" accept="image/*" capture="environment">
+            </label>
+            <label class="upload-btn" for="f-archivo">
+              <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+              <span>Subir archivo</span>
+              <small>Imagen, captura o PDF</small>
+              <input id="f-archivo" name="archivo" type="file" accept="image/*,application/pdf" multiple>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="sheet-foot">
+          <a class="btn btn--cancel" href="#">Cancelar</a>
+          <button class="btn btn--income btn--save" type="submit">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <span>Guardar gasto</span>
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
