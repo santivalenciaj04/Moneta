@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crea tu contraseña - Moneta</title>
+  <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+
+  <!-- Encabezado / Logo Moneta -->
+  <header class="header">
+    <div class="logo-container">
+      <div class="logo-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" rx="6" fill="#1d2b53"/>
+          <path d="M7 9L12 13L17 9V15H7V9Z" fill="#10b981"/>
+        </svg>
+      </div>
+      <span class="logo-text">Moneta</span>
+    </div>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="main-container">
+    <h1 class="title">Crea tu contraseña</h1>
+
+    <form class="password-form">
+      
+      <!-- Cuadro de Requisitos de Contraseña -->
+      <div class="requirements-card">
+        <ul class="requirements-list">
+          <li class="requirement-item invalid">
+            <span class="check-icon">✓</span>
+            <span>Mínimo 8 caracteres</span>
+          </li>
+          <li class="requirement-item invalid">
+            <span class="check-icon">✓</span>
+            <span>Una letra mayúscula (A-Z)</span>
+          </li>
+          <li class="requirement-item invalid">
+            <span class="check-icon">✓</span>
+            <span>Una letra minúscula (a-z)</span>
+          </li>
+          <li class="requirement-item invalid">
+            <span class="check-icon">✓</span>
+            <span>Al menos un número (0-9)</span>
+          </li>
+          <li class="requirement-item invalid special-char-item">
+            <div class="special-char-label">
+              <span class="check-icon">✓</span>
+              <span>Un carácter especial:</span>
+            </div>
+            <div class="special-char-box">
+              ! @ # $ % & * ?
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Campo 1: Escribe tu contraseña -->
+      <div class="input-group">
+        <input 
+          type="password" 
+          placeholder="Escribe tu contraseña"
+          required
+        >
+        <button type="button" class="toggle-password" aria-label="Mostrar u ocultar contraseña">
+          <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Campo 2: Repite tu contraseña -->
+      <div class="input-group">
+        <input 
+          type="password" 
+          placeholder="Repite tu contraseña"
+          required
+        >
+        <button type="button" class="toggle-password" aria-label="Mostrar u ocultar contraseña">
+          <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+          </svg>
+        </button>
+      </div>
+
+    </form>
+
+    <!-- Enlace que funciona como botón sin necesidad de JavaScript -->
+    <a href="../otp/codigo_otp.html" class="submit-btn">Enviar solicitud</a>
+  </main>
+
+  <footer class="footer"></footer>
+
+</body>
