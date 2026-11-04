@@ -266,3 +266,118 @@ margin-left: 8rem;
   margin-top: 1rem;
 }
 
+/* Estado abierto del Popover nativo */
+.modal-card:popover-open {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Tarjeta principal del pop-up */
+.modal-card {
+    border: none !important;
+    border-radius: 28px !important;
+    padding: 36px 32px !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+    max-width: 440px !important;
+    width: 90% !important;
+    text-align: center !important;
+    font-family: "Inter", sans-serif !important;
+    color: #0f172a !important;
+    
+    /* Animación fluida de apertura y cierre */
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.25s ease, transform 0.25s ease, display 0.25s allow-discrete;
+    margin: auto !important;
+}
+
+/* Fondo oscuro translúcido detrás de la tarjeta (Backdrop nativo) */
+.modal-card::backdrop {
+    background-color: rgba(15, 23, 42, 0.5) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+/* Círculo superior con el ícono */
+.modal-icon-container {
+    width: 76px !important;
+    height: 76px !important;
+    background-color: #fce8e6 !important; /* Tono durazno/rosado suave del diseño */
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 20px auto !important;
+    font-size: 34px !important;
+}
+
+/* Título "Aún no estás inscrito" */
+.modal-title {
+    font-family: "Space Grotesk", sans-serif !important;
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin: 0 0 20px 0 !important;
+}
+
+/* Caja de alerta con fondo rosado claro y borde suave */
+.modal-alert-box {
+    background-color: #fef2f2 !important;
+    border: 1px solid #fee2e2 !important;
+    border-radius: 16px !important;
+    padding: 18px 20px !important;
+    margin-bottom: 24px !important;
+    text-align: left !important;
+}
+
+.modal-alert-box p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    color: #b91c1c !important; /* Tono rojo/marrón de alerta del diseño */
+    margin: 0 !important;
+    font-weight: 400 !important;
+}
+
+/* Botón principal azul corporativo */
+.btn-primary-modal {
+    width: 100% !important;
+    background-color: #2f5bff !important;
+    color: #ffffff !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    padding: 16px 20px !important;
+    border: none !important;
+    border-radius: 14px !important;
+    cursor: pointer !important;
+    margin-bottom: 20px !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.btn-primary-modal:hover {
+    background-color: #1d4ed8 !important;
+}
+
+/* Texto descriptivo de pie */
+.modal-footer-text {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    color: #64748b !important;
+    margin: 0 0 24px 0 !important;
+    padding: 0 10px !important;
+}
+
+/* Enlace inferior "Probar con otro correo" */
+.btn-text-link {
+    background: none !important;
+    border: none !important;
+    color: #2f5bff !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    padding: 4px 8px !important;
+    font-family: "Inter", sans-serif !important;
+}
+
+.btn-text-link:hover {
+    text-decoration: underline !important;
+}

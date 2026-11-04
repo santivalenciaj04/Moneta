@@ -52,15 +52,55 @@
 
                 <label class="form3" for="correo">Correo Electrónico:</label>
                 <input type="email" id="correo" name="email" placeholder="Ej: moneta@gmail.com" required>
-            <button type="submit" class="bt1">Continuar</button>
-
-            </form>
+            <button type="button" popovertarget="modalNoInscrito" class="bt1">Continuar</button>
+           
+           </form>
 
              <p class="registro">¿Aún no tienes cuenta? <a href="./landing_Page.html#formulario">Solicita tu inscripción</a></p>
             </div>  
-         
+
         </section>
     </main>
+
+    <!-- Botón activador nativo (Abre el pop) -->
+<button type="button" popovertarget="modalNoInscrito" class="btn-primary">
+    Ver Alerta de Inscripción
+</button>
+
+<!-- Pop-up / Modal fiel al diseño -->
+<div id="modalNoInscrito" popover class="modal-card">
+    
+    <!-- Círculo con el icono del buzón -->
+    <div class="modal-icon-container">
+        📬
+    </div>
+
+    <!-- Título principal -->
+    <h2 class="modal-title">Aún no estás inscrito</h2>
+
+    <!-- Caja de alerta interna con fondo rosado claro -->
+    <div class="modal-alert-box">
+        <p>No encontramos una solicitud de registro con este correo. Envía tu solicitud en nuestra página para poder ingresar.</p>
+    </div>
+
+    <!-- Botón de acción principal (Cierra el popover y redirige opcionalmente) -->
+   <button type="button" popovertarget="modalNoInscrito" popovertargetaction="hide" class="btn-primary-modal" onclick="window.location.href='./landing_Page.html#formulario'">
+    Ir al formulario de inscripción
+</button>
+        Ir al formulario de inscripción
+    </button>
+
+    <!-- Texto descriptivo secundario -->
+    <p class="modal-footer-text">
+        Después de enviarla recibirás un correo de bienvenida y podrás volver aquí a activar tu cuenta.
+    </p>
+
+    <!-- Enlace inferior para cerrar -->
+    <button type="button" popovertarget="modalNoInscrito" popovertargetaction="hide" class="btn-text-link">
+        ← Probar con otro correo
+    </button>
+
+</div>
 </body>
 
 </html> 
