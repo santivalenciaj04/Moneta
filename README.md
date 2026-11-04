@@ -1,98 +1,154 @@
-# Moneta
-Proyecto integrador
+# 💼 Moneta — *tu bolsillo inteligente*
 
-💰 Moneta — Landing Page
+> 💙 Plataforma de finanzas personales para que **ningún peso** quede por fuera: ni el grande, ni el hormiga. 🐜
 
-Página de aterrizaje (Landing Page) pública y adaptativa maquetada para presentar la plataforma Moneta, comunicar su propuesta de valor, visibilizar el control de gastos hormiga y promover el registro de nuevos usuarios.
+![Estado](https://img.shields.io/badge/estado-en%20desarrollo-blue)
+![Tipo](https://img.shields.io/badge/proyecto-acad%C3%A9mico-green)
+![Enfoque](https://img.shields.io/badge/dise%C3%B1o-mobile--first-1f3a68)
 
-📸 Vista Previa
+---
 
-(Puedes incluir capturas de pantalla o un GIF animado de la Landing Page maquetada aquí)
+## 📚 Contexto académico
 
-🎯 Objetivo de la Entrega
+Proyecto integrador de las materias:
 
-Este repositorio contiene la maquetación web de la Landing Page de Moneta, desarrollada como entrega académica del módulo de Frameworks CSS y Maquetación Web. El objetivo es construir una interfaz limpia, atractiva, accesible y totalmente responsiva utilizando de manera exclusiva HTML5 y Tailwind CSS / CSS3.
+- 🧭 **Metodologías**
+- 💻 **Introducción a la Programación**
+- 🧠 **Lógica**
 
-✨ Secciones y Componentes Maquetados
+---
 
-1. Menú de Navegación Flotante (Header / Nav)
+## 🎯 ¿De qué trata Moneta?
 
-Navegación Persistente: Menú con fijación (sticky / fixed) que permanece accesible al desplazarse por la página.
+Moneta es una plataforma donde el usuario registra **absolutamente todos sus gastos** de forma manual, para tener una visión real y completa de su dinero. A partir de esa información, la app le muestra cómo van sus finanzas del mes, le ayuda a ahorrar y le da recomendaciones personalizadas.
 
-Elementos: Logotipo institucional de Moneta, enlaces de salto interno (Gasto Hormiga, Cómo funciona, Bolsillo inteligente) y botón de acción (Call To Action) directo a registro.
+---
 
-2. Banner Principal (Hero Section)
+## ✨ Funcionalidades principales
 
-Propuesta de Valor: Encabezado con tipografía de alto impacto y mensaje enfocado en la salud financiera.
+| | Funcionalidad | Descripción |
+|---|---|---|
+| 📝 | **Registro manual de gastos** | Ingreso de cada gasto, sin que se escape ninguno |
+| 🧾 | **Comprobantes y recibos** | Carga de imágenes de transferencias, tirillas y recibos de compra |
+| 🐜 | **Gastos hormiga** | Seguimiento de esos pequeños gastos que pasan desapercibidos |
+| 📊 | **Resumen mensual** | Estado de las finanzas del mes: saldo disponible, gasto del día, tendencia semanal |
+| 🐷 | **Bolsillo inteligente** | Espacio para ahorrar, incluyendo el ahorro para gastos fijos |
+| 💡 | **Tips y recomendaciones** | Sugerencias de en qué usar el dinero que va "sobrando" |
+| 🚨 | **Alertas** | Aviso cuando la cuenta se acerca a **cero**, entre otras alertas |
 
-Llamados a la Acción (CTA): Botones principales con estados de interacción visual (hover, active, focus).
+---
 
-Soporte Gráfico: Contenedor e imágenes ilustrativas del concepto de la plataforma.
+## 🧩 Componentes del proyecto
 
-3. Sección "Gasto Hormiga"
+### 🌐 1. Parte pública — Landing page
+- 📖 Explica de qué trata la plataforma.
+- 🖊️ Incluye el **formulario de inscripción** de usuarios.
+- 📧 Al inscribirse, el usuario recibe un **correo de bienvenida** y pasa a la app móvil.
 
-Maquetación Modular: Grilla adaptativa (CSS Grid / Flexbox) a dos columnas para exponer la problemática de los pequeños gastos diarios.
+### 📱 2. Parte privada — App móvil
+- 🔐 El usuario termina de crear su cuenta con su **propia contraseña** y accede a la plataforma.
+- 🏠 Acceso a todas las herramientas de control de gastos y ahorro.
 
-Componente de Consumo: Tarjetas informativas que simulan el desglose semanal de microconsumos y gráficos explicativos.
+---
 
-4. Sección "Cómo Funciona"
+## 🔄 Flujo de acceso
 
-Flujo en 3 Pasos: Tarjetas secuenciales e ilustradas que explican el funcionamiento básico del sistema de manera sencilla.
+```
+📧 Ingresa su correo
+      │
+      ├── ❌ Correo NO registrado ──► 💬 Mensaje + botón ──► 🌐 Formulario de la landing
+      │                                                        │
+      │                                                        ▼
+      │                                               📩 Correo de bienvenida
+      │
+      └── ✅ Correo registrado (primer ingreso)
+                  │
+                  ▼
+        🔑 Modal: crear contraseña
+        (mín. 8 caracteres, mayúsculas, minúsculas
+         y caracteres especiales + confirmación)
+                  │
+                  ▼
+        🔢 Código alfanumérico de 6 dígitos (token por correo)
+                  │
+                  ▼
+        📝 Formulario de primer ingreso
+                  │
+                  ▼
+        🏠 Home de la app
+```
 
-5. Componente "Bolsillo Inteligente"
+---
 
-Vista Previa de Ahorro: Tarjetas descriptivas del hábito de ahorro con barras de progreso maquetadas en Tailwind CSS e indicadores de saldo.
+## 📲 Vistas de la app
 
-6. Pie de Página (Footer)
+1. 🔐 **Inicio de sesión** — campo "ingresa tu correo".
+2. 🔑 **Modal de creación de contraseña** — con validaciones y visualización de la contraseña 👁️.
+3. 🔢 **Verificación con código** de 6 dígitos.
+4. 🚫 **Correo no registrado** — redirige al formulario de la landing.
+5. 📝 **Formulario de primer ingreso** — cuentas, bancos, gastos, estado civil, cantidad de hijos, en qué suele gastar, gastos fijos y otros datos útiles.
+6. 🏠 **Home** — saldo disponible del mes, gasto del día, tendencia semanal y ahorro para gastos fijos.
 
-Cierre Institucional: Enlaces secundarios, información de derechos de autor y avisos legales.
+**Barra de navegación inferior:**
 
-🛠️ Tecnologías y Herramientas
+| 🏠 Inicio | 💸 Movimientos | 🐷 Bolsillo inteligente | 🐜 Gastos hormiga |
+|---|---|---|---|
 
-HTML5 Semántico: Estructura web estándar haciendo uso de etiquetas <header>, <nav>, <main>, <section>, <article> y <footer>.
+> 🍔 En móvil, las opciones principales van abajo y las demás en un **menú hamburguesa**.
 
-Tailwind CSS: Framework CSS orientado a clases utilitarias para el diseño responsivo, distribución de espacios y paleta cromática.
+---
 
-CSS3: Estilos personalizados para animaciones, gradientes y transiciones suaves.
+## 🎨 Identidad visual
 
-Diseño Responsivo (Mobile-First): Interfaz maquetada para adaptarse fluidamente a dispositivos móviles, tabletas y computadores de escritorio (sm:, md:, lg:).
+- 🏷️ **Marca:** Moneta
+- 💬 **Slogan:** *tu bolsillo inteligente*
+- 👛 **Logo:** billetera con una "M" y un billete verde asomando
+- 🎨 **Colores:** azul marino 🔵 y verde 🟢, con tonos de azul en tendencia
+- ✨ **Estilo:** diseño muy limpio y moderno
+- 🧩 **Íconos de apoyo:** 🎛️ Controla · 🐷 Ahorra · 🗂️ Organiza · 📈 Invierte
 
-📂 Estructura del Proyecto
+---
 
-moneta-landing-page/
-│
-├── index.html              # Landing Page principal
-│
-├── css/
-│   ├── output.css          # Archivo CSS compilado por Tailwind
-│   └── styles.css          # Estilos personalizados y variables CSS
-│
-└── assets/
-    ├── img/                # Banners, ilustraciones y recursos gráficos
-    └── icons/              # Logotipo e iconografía SVG
+## 🛠️ Tecnologías
 
+- 🧱 **HTML5**
+- 🎨 **CSS3** (flex, pseudoelementos, media queries, hovers)
+- 💨 **Tailwind CSS** (en las vistas que lo requieren)
+- 📐 **Diseño responsivo, mobile-first**
 
-⚙️ Visualización Local
+---
 
-Clonar el repositorio:
+## 🗺️ Avance del proyecto
 
-git clone https://github.com/tu-usuario/moneta-landing-page.git
+- [x] 🚩 **Sprint 1:** diseño de la landing page y formulario de registro
+- [x] 🌐 Landing page terminada (parte pública)
+- [x] 🎨 Mockups del flujo de acceso (login, contraseña, código, no registrado)
+- [x] 🖼️ Prototipo interactivo del flujo de acceso
+- [x] 📝 Vista del formulario de primer ingreso
+- [x] 🏠 Vista del home
+- [ ] 💸 Vista de Movimientos
+- [ ] 🐷 Vista del Bolsillo inteligente
+- [ ] 🐜 Vista de Gastos hormiga
+- [ ] 🚨 Alertas y recomendaciones
 
+---
 
-Abrir el proyecto:
-Navega a la carpeta del proyecto y abre el archivo index.html en cualquier navegador web moderno (Google Chrome, Firefox, Edge, Safari).
+## 👥 Equipo
 
-Ejecución con Live Server (Opcional):
-Si utilizas Visual Studio Code, haz clic derecho sobre index.html y selecciona "Open with Live Server".
+| 👤 Integrante | 🎓 Rol |
+|---|---|
+| Luisa | _por completar_ |
+| _por completar_ | _por completar_ |
 
-👥 Equipo de Desarrollo
+🏫 **Institución:** _por completar_
+👩‍🏫 **Docente:** _por completar_
 
-Integrantes del Equipo: 
+---
 
-Jhon Fredy Salazar
-Luisa Fernanda Carvajal
-Cristian Alvarez
-Miguel Angel Garcia
-Santiago Valencia
+## 📄 Licencia
 
-Asignatura / Módulo: Proyecto Integrador
+Proyecto con fines **académicos** 🎓.
+
+---
+
+<p align="center">💙 Hecho con dedicación por el equipo Moneta 💚</p>
