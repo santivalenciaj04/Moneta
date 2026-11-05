@@ -137,8 +137,8 @@ Moneta es una plataforma donde el usuario registra **absolutamente todos sus gas
 
 | 👤 Integrante | 🎓 Rol |
 |---|---|
-| Luisa | _por completar_ |
-| _por completar_ | _por completar_ |
+| Luisa Fernanda carvajal| Santiago Valencia Jimenez | Miguel Angel Garcia Gualteros
+| Cristian Alvarez Lopez|Jhon Fredy Salazar|
 
 🏫 **Institución:** _por completar_
 👩‍🏫 **Docente:** _por completar_
