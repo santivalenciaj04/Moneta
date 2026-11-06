@@ -70,10 +70,11 @@
 
   .logo-f-container h2 {
   font-family: "Space Grotesk", sans-serif;
-  color: #0a192f; /* Azul muy oscuro / casi negro */
+  color: #0a192f; 
   font-weight: 700;
   font-size: 1.75rem;
   text-align: center;
+  
 }
 
 .p1 {
@@ -88,7 +89,7 @@
 }
 
 .texto-1 .p2 {
-    margin-left: 13rem;
+    margin-left: 11rem;
     margin-top: 6rem;
     
 }
