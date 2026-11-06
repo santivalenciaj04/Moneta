@@ -3,7 +3,8 @@
    BLOQUE R1: @media (max-width: 992px) - Tablets y pantallas medianas
    Transiciones suaves y flexibilidad para la barra superior.
    ========================================================== */
-@media (max-width: 1428px) {
+
+@media (max-width: 3840px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -19,6 +20,7 @@
     margin-left: 0;
   }
 }
+
 
 /* ==========================================================
    BLOQUE R2: @media (max-width: 768px) - Dispositivos móviles
@@ -72,47 +74,64 @@
 }
 
 /********************************************************************************** Inicio responsive tarjeta **********************************************************************************************/
-/* ==========================================================
-   BLOQUE R3: @media (max-width: 992px) - Adaptación de .info_1 y .card-1
-   Cambia la distribución horizontal (flex-row) a vertical (column) 
-   para pantallas medianas y pequeñas, centrando los contenidos.
-   ========================================================== */
-@media (max-width: 992px) {
+@media (max-width: 3840px) {
+  .contenido {
+    margin-left: 8rem;
+  }
+
+  .card-1 {
+    margin-right: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
   .info_1 {
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 6rem 1.5rem 3rem;
-    height: auto;
+    gap: 2.5rem;
+    padding: 3rem 1.25rem 3rem;
     min-height: auto;
-    gap: 3rem;
   }
 
   .contenido {
     margin-left: 0;
     max-width: 100%;
+    align-items: center;
     text-align: center;
   }
 
   .contenido h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+  }
+
+  .contenido p {
+    font-size: 0.95rem;
   }
 
   .reservar {
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
   }
 
   .card-1 {
-    margin-right: 0;
     width: 100%;
     max-width: 26rem;
+    margin-right: 0;
+    padding: 1.5rem;
   }
-}
 
-@media (max-width: 480px) {
-  .contenido h1 {
+  .amount-val {
     font-size: 2rem;
+  }
+
+  .gastos-list li {
+    margin-left: 0;
   }
 }
 /*************************************************************************************************Fin responsive*****************************************************************************************/
@@ -395,4 +414,15 @@
   .checkbox, .bt1, .tx1 {
     grid-column: 1; /* Restablece el span para que ocupen todo el ancho disponible */
   }
+}
+
+
+@@media (max-width: 1400px)
+
+{
+   
+  .banner5(
+  width: 100%;
+    aspect-ratio: 1 / 1;
+  )
 }
