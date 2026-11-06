@@ -1048,7 +1048,7 @@ nav a:hover {
   background-color: #cfd0d1;
   width: 100%;
   height: 0.09rem;
-  top: 135rem;
+  top: 133rem;
   position: absolute;
 }
 
@@ -1287,21 +1287,36 @@ nav a:hover {
 /************************************************************************************* Sección 5 (Notificaciones) **********************************************************************************/
 
 /* ==========================================================
-   BLOQUE 1: .info5 (Quinta sección principal)
-   Configura un fondo oscuro corporativo, ancho completo y una 
-   altura mínima de pantalla con visualización en bloque.
+   BLOQUE 0: .banner5 (Contenedor principal de la sección)
+   Configura Flexbox para alinear el texto y la tarjeta lado a lado 
+   y mantiene el fondo azul en toda la sección.
    ========================================================== */
-.info5 {
+.banner5 {
   background-color: #10173a;
   width: 100%;
   min-height: 100vh;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 10rem 6rem 10rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* ==========================================================
+   BLOQUE 1: .info5 (Contenedor de texto)
+   ========================================================== */
+.info5 {
+  background-color: transparent;
+  width: 100%;
+  max-width: 38rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ==========================================================
    BLOQUE 2: .alerta (Etiqueta o insignia de alerta)
-   Diseña una etiqueta flotante en línea con fondo rojizo, bordes 
-   redondeados en píldora, texto en negrita y márgenes específicos.
    ========================================================== */
 .alerta {
   display: inline-flex;
@@ -1310,21 +1325,20 @@ nav a:hover {
   padding: 0.5rem 1.125rem;
   background-color: #f17878;
   border-radius: 999rem;
-  width: 8.5rem;
+  width: fit-content;
   height: 3rem;
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 0.9rem;
   font-weight: bold;
   letter-spacing: 0.0625rem;
-  margin-top: 5rem;
-  margin-left: 17.5rem;
+  margin-top: 0;
+  margin-left: 0;
+  box-sizing: border-box;
 }
 
 /* ==========================================================
    BLOQUE 3: .alerta .pun (Punto indicador de la alerta)
-   Crea un pequeño punto circular de color blanco dentro 
-   de la etiqueta de alerta.
    ========================================================== */
 .alerta .pun {
   width: 0.5rem;
@@ -1336,54 +1350,48 @@ nav a:hover {
 
 /* ==========================================================
    BLOQUE 4: .info5 h2 (Título H2 de la quinta sección)
-   Estiliza el título con texto blanco, tipografía Space Grotesk, 
-   tamaño grande, ancho máximo delimitado y márgenes específicos.
    ========================================================== */
 .info5 h2 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Space Grotesk", sans-serif;
   font-size: 2.8rem;
   font-weight: 700;
   line-height: 1.1;
-  max-width: 40rem;
-  margin-left: 17.5rem;
-  margin-top: 6rem;
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 2rem;
 }
 
 /* ==========================================================
    BLOQUE 5: .info5 p (Párrafo descriptivo de la quinta sección)
-   Configura el color de texto blanco, tipografía Inter, tamaño cómodo, 
-   ancho máximo y margen izquierdo.
    ========================================================== */
 .info5 p {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-size: 1.15rem;
-  max-width: 27rem;
-  margin-top: 2rem;
-  margin-left: 17.5rem;
+  max-width: 100%;
+  margin-top: 1.5rem;
+  margin-left: 0;
 }
 
 /* ==========================================================
    BLOQUE 6: .notificacion (Tarjeta de notificación flotante)
-   Diseña una caja de fondo blanco alineada a la derecha mediante 
-   flotación, con esquinas redondeadas, sombra y posicionamiento superior.
    ========================================================== */
 .notificacion {
   background-color: #ffffff;
   width: 22rem;
+  max-width: 100%;
   padding: 1.5rem;
   border-radius: 1.25rem;
   box-shadow: 0 0.5rem 1.25rem rgba(0, 0, 0, 0.15);
-  margin-right: 18rem;
-  margin-top: -34rem;
-  float: right;
+  float: none;
+  margin: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
 }
 
 /* ==========================================================
    BLOQUE 7: .notification-header (Cabecera de la notificación)
-   Alinea los elementos internos a los extremos con espacio 
-   entre ellos y añade un margen inferior.
    ========================================================== */
 .notification-header {
   display: flex;
@@ -1394,8 +1402,6 @@ nav a:hover {
 
 /* ==========================================================
    BLOQUE 8: .app-name, .notification-time (Textos de cabecera)
-   Define el color corporativo oscuro compartido para el nombre 
-   de la aplicación y la hora de la notificación.
    ========================================================== */
 .app-name, .notification-time {
   color: #10173a;
@@ -1403,7 +1409,6 @@ nav a:hover {
 
 /* ==========================================================
    BLOQUE 9: .app-name (Nombre de la aplicación)
-   Configura el tamaño de fuente y un grosor medio para el nombre.
    ========================================================== */
 .app-name { 
   font-size: 1.05rem; 
@@ -1412,7 +1417,6 @@ nav a:hover {
 
 /* ==========================================================
    BLOQUE 10: .notification-time (Hora de la notificación)
-   Establece el tamaño estándar para el indicador temporal.
    ========================================================== */
 .notification-time { 
   font-size: 1rem; 
@@ -1420,8 +1424,6 @@ nav a:hover {
 
 /* ==========================================================
    BLOQUE 11: .notification-body (Cuerpo de la notificación)
-   Crea una caja interior con fondo rosado claro, relleno interno 
-   y bordes redondeados.
    ========================================================== */
 .notification-body {
   background-color: #f7cece;
@@ -1431,8 +1433,6 @@ nav a:hover {
 
 /* ==========================================================
    BLOQUE 12: .notification-text (Texto principal de la notificación)
-   Aplica color rojizo al texto, tamaño adecuado, altura de línea 
-   legible y elimina márgenes predeterminados.
    ========================================================== */
 .notification-text {
   color: #fd5a44;
@@ -1443,19 +1443,17 @@ nav a:hover {
 
 /* ==========================================================
    BLOQUE 13: .barra5 (Línea divisoria principal número 5)
-   Diseña una línea oscura horizontal con alta opacidad, margen 
-   superior negativo, posición relativa y z-index elevado.
    ========================================================== */
 .barra5 {
   background-color: #0E1533;
   width: 100%;
   height: 0.09rem;
   opacity: 0.9;
-  margin-top: -5rem;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 10;
 }
-
 /************************************************************************************************** Formulario ***************************************************************************************/
 
 /* ==========================================================
