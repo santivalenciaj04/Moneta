@@ -239,137 +239,442 @@
 
 /****************************************************************************** Responsive Info 3 ***********************************************************************************/
 /* ==========================================================
-   BLOQUE R5: @media (max-width: 992px) - Adaptación de la Sección 3
-   Reorganiza la línea de tiempo y los pasos de coordenadas absolutas 
-   y márgenes fijos a un flujo vertical limpio.
+   1. PANTALLAS GRANDES Y MONITORES ULTRA-WIDE (min-width: 90rem / 1440px)
+   Ajusta márgenes para pantallas de alta resolución.
    ========================================================== */
-@media (max-width: 992px) {
+@media (min-width: 3480px) {
   .info_3 {
     height: auto;
-    min-height: auto;
-    padding: 4rem 1.5rem;
+    min-height: 100vh;
+    padding-top: 5rem;
+  }
+}
+
+/* ==========================================================
+   2. LAPTOPS / PORTÁTILES (max-width: 75rem / 1200px)
+   Reajusta los desplazamientos horizontales para evitar scroll lateral.
+   ========================================================== */
+@media (max-width: 1200px) {
+  .info_3 {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 5rem;
+  }
+
+  .contenido2,
+  .lineas,
+  .sub1,
+  .text1 {
+    margin-left: 8rem;
+  }
+
+  .lineas {
+    width: 75%;
+  }
+
+  .sub2,
+  .text2 {
+    margin-left: 28rem;
+  }
+
+  .sub3,
+  .text3 {
+    margin-left: 48rem;
+  }
+}
+
+/* ==========================================================
+   3. TABLETS (max-width: 62rem / 992px)
+   Reduce tamaños de fuente e independiza la altura fija.
+   ========================================================== */
+@media (max-width: 992px) {
+  .contenido2 h2 {
+    font-size: 2.2rem;
+  }
+
+  .contenido2,
+  .lineas,
+  .sub1,
+  .text1 {
+    margin-left: 4rem;
+  }
+
+  .lineas {
+    width: 85%;
+  }
+
+  .sub2,
+  .text2 {
+    margin-left: 22rem;
+  }
+
+  .sub3,
+  .text3 {
+    margin-left: 40rem;
+  }
+
+  .barra3 {
+    position: relative;
+    top: auto;
+    margin-top: 0rem;
+  }
+}
+
+/* ==========================================================
+   4. PANTALLAS PEQUEÑAS / MÓVILES (max-width: 48rem / 768px)
+   Convierte la distribución horizontal en vertical (apilada)
+   para una navegación limpia y sin superposiciones.
+   ========================================================== */
+@media (max-width: 768px) {
+  .info_3 {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
   }
 
   .contenido2 {
-    margin-left: 0;
-    max-width: 100%;
-  }
-
-  .contenido2 h2, 
-  .contenido2 p {
+    margin-left: 2rem;
+    padding-right: 2rem;
     max-width: 100%;
   }
 
   .contenido2 h2 {
-    font-size: 2.2rem;
-    margin-top: 0;
+    font-size: 1.8rem;
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
+
+  .contenido2 p {
+    font-size: 1rem;
+    max-width: 100%;
   }
 
   .lineas {
-    width: 100%;
-    margin-left: 0;
-    flex-direction: column;
-    gap: 2rem;
+    width: calc(100% - 4rem);
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
 
-  /* Limpieza de posiciones manuales/absolutas de escritorio */
-  .sub1, .text1, 
-  .sub2, .text2, 
-  .sub3, .text3 {
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-    max-width: 100% !important;
-    display: block !important;
+  /* Desactivación de posicionamiento manual por coordenadas */
+  .sub1,
+  .text1,
+  .sub2,
+  .text2,
+  .sub3,
+  .text3 {
+    margin-left: 2rem;
+    max-width: calc(100% - 4rem);
+    display: block;
+  }
+
+  .sub1 {
+    margin-top: 2rem;
+  }
+
+  .sub2,
+  .sub3 {
+    margin-top: 1.5rem; /* Resetea el margen negativo */
+  }
+
+  .text1,
+  .text2,
+  .text3 {
+    margin-top: 0.3rem;
   }
 
   .barra3 {
-    position: static;
-    margin-top: 3rem;
+    position: relative;
+    top: auto;
+    margin-top: 0rem;
   }
 }
+
+/* ==========================================================
+   5. MÓVILES MUY PEQUEÑOS (max-width: 30rem / 480px)
+   Ajuste final para pantallas angostas.
+   ========================================================== */
+@media (max-width: 480px) {
+  .contenido2,
+  .lineas,
+  .sub1,
+  .text1,
+  .sub2,
+  .text2,
+  .sub3,
+  .text3 {
+    margin-left: 1rem;
+  }
+
+  .contenido2 {
+    padding-right: 1rem;
+  }
+
+  .lineas {
+    width: calc(100% - 2rem);
+    gap: 0.75rem;
+  }
+
+  .sub1,
+  .text1,
+  .sub2,
+  .text2,
+  .sub3,
+  .text3 {
+    max-width: calc(100% - 2rem);
+  }
+
+  .contenido2 h2 {
+    font-size: 1.5rem;
+  }
+}
+
 /****************************************************************************** Fin responsive info 3 *******************************************************************************/
 
 
 /********************************************************************************** Responsive Info 4 *******************************************************************************************/
 /* ==========================================================
-   BLOQUE R6: @media (max-width: 992px) - Adaptación de la Sección 4 y Tarjeta 4
-   Alinea los textos y desactiva el margen negativo de la tarjeta 
-   para que fluya de manera natural debajo del contenido.
+   1. PANTALLAS GRANDES Y MONITORES ULTRA-WIDE (min-width: 90rem / 1440px)
+   Mantiene el espacio para pantallas de alta resolución.
    ========================================================== */
-@media (max-width: 992px) {
+@media (max-width: 3440px) {
   .info4 {
-    height: auto;
+    min-height: 100vh;
+    padding-bottom: 6rem;
+  }
+  .card {
+    margin-left: 60rem;
+    margin-top: -24rem;
+  }
+}
+
+/* ==========================================================
+   2. LAPTOPS / PORTÁTILES (max-width: 75rem / 1200px)
+   Ajusta márgenes horizontales para evitar que la tarjeta desborde.
+   ========================================================== */
+@media (max-width: 993px) {
+  .contenido3 {
+    margin-left: 8rem;
+    padding-right: 32rem; /* Reserva espacio a la derecha para la tarjeta */
+  }
+
+  .contenido3 h2 {
+    font-size: 2.4rem;
+    max-width: 100%;
+  }
+
+  .card {
+    margin-left: 55rem;
+    margin-top: -24rem;
+    max-width: 24rem;
+  }
+
+  .barra4 {
+    margin-top: -12rem;
+  }
+}
+
+/* ==========================================================
+   3. TABLETS (max-width: 62rem / 992px)
+   Pasa de diseño lateral a vertical, apilando la tarjeta debajo del texto.
+   ========================================================== */
+@media (max-width: 62rem) {
+  .info4 {
     min-height: auto;
-    padding: 4rem 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
   }
 
   .contenido3 {
-    margin-left: 0;
+    margin-left: 4rem;
+    padding-right: 4rem;
   }
 
   .contenido3 h2 {
     font-size: 2.2rem;
+  }
+
+  .i1, 
+  .i2, 
+  .i3, 
+  .i4 {
     max-width: 100%;
   }
 
-  .i1, .i2, .i3, .i4 {
-    max-width: 100% !important;
-    margin-top: 1.5rem !important;
-  }
-
+  /* Desactivación de margen negativo para ubicar la tarjeta debajo */
   .card {
-    margin-left: 0;
-    margin-top: 2rem;
-    max-width: 100%;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    max-width: 28rem;
   }
 
   .barra4 {
+    margin-top: 4rem;
+  }
+}
+
+/* ==========================================================
+   4. PANTALLAS PEQUEÑAS / MÓVILES (max-width: 48rem / 768px)
+   Redimensiona textos, padding y anchos al 100% para pantallas móviles.
+   ========================================================== */
+@media (max-width: 48rem) {
+  .info4 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .contenido3 {
+    margin-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contenido3 h2 {
+    font-size: 1.8rem;
+  }
+
+  .i1 {
+    font-size: 1.05rem;
+    margin-top: 1.5rem;
+  }
+
+  .i2, 
+  .i3, 
+  .i4 {
+    font-size: 0.95rem;
     margin-top: 2rem;
+  }
+
+  .card {
+    margin-left: 2rem;
+    margin-top: 3rem;
+    max-width: calc(100% - 4rem);
+    padding: 1.5rem 1.25rem;
+  }
+
+  .card-amount {
+    font-size: 1.875rem;
+  }
+
+  .barra4 {
+    margin-top: 3rem;
+  }
+}
+
+/* ==========================================================
+   5. MÓVILES MUY PEQUEÑOS (max-width: 30rem / 480px)
+   Ajustes de márgenes mínimos para pantallas estrechas.
+   ========================================================== */
+@media (max-width: 30rem) {
+  .contenido3 {
+    margin-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .contenido3 h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    margin-left: 1rem;
   }
 }
 /********************************************************************************************************************************************************************************/
 
 
-/********************************---------------------------------------------------- Responsive Info 5 ******************************************************************************/
+/********************************---------------------------------------------------- Responsive Info 5 *********************/
 /* ==========================================================
-   BLOQUE R7: @media (max-width: 992px) - Adaptación de la Sección 5
-   Adapta los elementos con `float: right` y márgenes grandes a una 
-   estructura flexible centrada y vertical.
+   1. LAPTOPS / PORTÁTILES (max-width: 1200px)
+   Ajusta paddings para evitar que el texto colisione.
    ========================================================== */
-@media (max-width: 992px) {
-  .info5 {
-    height: auto;
-    min-height: auto;
-    padding: 4rem 1.5rem;
-  }
-
-  .alerta {
-    margin-left: 0;
-    margin-top: 0;
+@media (max-width: 1200px) {
+  .banner5 {
+    padding: 4rem 5rem 6rem 5rem;
   }
 
   .info5 h2 {
-    margin-left: 0;
-    margin-top: 1.5rem;
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+  }
+}
+
+/* ==========================================================
+   2. TABLETS (max-width: 992px)
+   Pasa la tarjeta debajo del texto limpiamente sin montarla.
+   ========================================================== */
+@media (max-width: 992px) {
+  .banner5 {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3.5rem;
+    padding: 4rem 4rem 6rem 4rem;
+    min-height: auto;
+  }
+
+  .info5 {
     max-width: 100%;
   }
 
-  .info5 p {
-    margin-left: 0;
-    max-width: 100%;
+  .info5 h2 {
+    font-size: 2.2rem;
   }
 
   .notificacion {
-    float: none;
-    margin-right: 0;
-    margin-top: 2rem;
     width: 100%;
-    max-width: 26rem;
+    max-width: 24rem;
+  }
+}
+
+/* ==========================================================
+   3. PANTALLAS PEQUEÑAS / MÓVILES (max-width: 768px)
+   ========================================================== */
+@media (max-width: 768px) {
+  .banner5 {
+    padding: 3.5rem 2rem 5.5rem 2rem;
+    gap: 2.5rem;
   }
 
-  .barra5 {
-    margin-top: 3rem;
+  .info5 h2 {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .info5 p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .notificacion {
+    max-width: 100%;
+    padding: 1.25rem;
+  }
+
+  .app-name {
+    font-size: 0.95rem;
+  }
+
+  .notification-time {
+    font-size: 0.9rem;
+  }
+
+  .notification-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* ==========================================================
+   4. MÓVILES MUY PEQUEÑOS (max-width: 480px)
+   ========================================================== */
+@media (max-width: 480px) {
+  .banner5 {
+    padding: 2.5rem 1rem 4.5rem 1rem;
+    gap: 2rem;
+  }
+
+  .info5 h2 {
+    font-size: 1.4rem;
+  }
+
+  .notificacion {
+    padding: 1rem;
   }
 }
 /********************************************************************************************************************************************************************************/
@@ -416,13 +721,9 @@
   }
 }
 
-
-@@media (max-width: 1400px)
-
-{
-   
-  .banner5(
-  width: 100%;
+@media (max-width: 1400px) {
+  .banner5 {
+    width: 100%;
     aspect-ratio: 1 / 1;
-  )
+  }
 }

@@ -1,0 +1,192 @@
+/* ==========================================================
+   MEDIA QUERIES RESPONSIVAS (En Píxeles: Desde PC a Móvil Pequeño)
+   ========================================================== */
+
+/* 1. PANTALLAS GRANDES Y ESCRITORIO (1200px o más) */
+@media screen and (min-width: 1025px) {
+  .cuadro-formulario {
+    max-width: 39rem;
+    padding: 3rem;
+  }
+
+  /* Corrección de márgenes fijos del código base */
+  .logo-f {
+    margin: 0 auto;
+    display: block;
+  }
+ 
+
+
+  .texto-1 .p2,
+  .texto-1 .p3 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .bt2 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+
+/* 2. LAPTOPS PEQUEÑAS Y TABLETAS HORIZONTAL (Hasta 1024px) */
+@media screen and (max-width: 1024px) {
+  .cuadro-formulario {
+    width: 85%;
+    max-width: 36rem;
+    padding: 2.5rem;
+    margin-top: 3.5rem;
+  }
+
+  .logo-f {
+    margin: 0 auto;
+    display: block;
+  }
+  
+
+  .texto-1 .p2,
+  .texto-1 .p3 {
+    margin-left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .bt2 {
+    width: 60%;
+    margin: 1.5rem auto 0 auto;
+    display: block;
+  }
+}
+
+/* 3. TABLETAS EN VERTICAL Y MÓVILES GRANDES (Hasta 768px) */
+@media screen and (max-width: 768px) {
+  .f1 {
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .cuadro-formulario {
+    width: 90%;
+    min-height: auto;
+    height: auto;
+    padding: 2rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 1.75rem;
+  }
+
+  .formulario1 {
+    grid-template-columns: 1fr; /* Pasa a 1 sola columna */
+    row-gap: 0.75rem;
+    margin-top: 2.5rem;
+  }
+
+  .logo-f {
+    margin: 0 auto;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .texto-1 .p2,
+  .texto-1 .p3 {
+    margin-left: 0;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .p1 {
+    white-space: normal;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+
+  .bt1,
+  .bt2 {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-left: 0;
+    padding: 0.8rem 1rem;
+  }
+
+  .modal-card {
+    width: 92% !important;
+    padding: 28px 20px !important;
+    border-radius: 20px !important;
+  }
+}
+
+/* 4. MÓVILES MEDIANOS (Hasta 480px) */
+@media screen and (max-width: 480px) {
+  .cuadro-formulario {
+    width: 94%;
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 1.25rem;
+  }
+
+  .logo-f-container h2 {
+    font-size: 1.35rem;
+  }
+
+  .p1 {
+    font-size: 0.9rem;
+    margin-top: -2rem;
+  }
+
+  #correo {
+    height: 2.75rem;
+    font-size: 0.9rem;
+  }
+
+  .modal-title {
+    font-size: 1.35rem !important;
+  }
+
+  .modal-icon-container {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 26px !important;
+  }
+
+  .modal-alert-box {
+    padding: 14px 16px !important;
+  }
+
+  .btn-primary-modal {
+    padding: 12px 16px !important;
+  }
+}
+
+/* 5. MÓVILES PEQUEÑOS (Hasta 360px) */
+@media screen and (min-width: 360px) {
+  .cuadro-formulario {
+    width: 98%;
+    padding: 1.25rem 0.75rem;
+  }
+  .p1{
+    margin-top: 2rem;
+  }
+
+  .logo-f {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .logo-f-container h2 {
+    font-size: 1.15rem;
+  }
+
+  .bt1,
+  .bt2 {
+    font-size: 0.875rem;
+  }
+
+  .modal-card {
+    padding: 16px 12px !important;
+  }
+
+  .modal-alert-box p {
+    font-size: 0.85rem !important;
+  }
+}
