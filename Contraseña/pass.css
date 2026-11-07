@@ -1,7 +1,7 @@
 /* Estilos base y tipografía */
 body {
   font-family: 'Space Grotesk', sans-serif;
-  background-color: #f8fafc;
+  background-color: #EDF1FD;
   margin: 0;
   padding: 0;
   display: flex;
@@ -11,11 +11,16 @@ body {
 }
 
 .main-container {
-  width: 100%;
+  width: 40%;
+  height: 80vh;
   max-width: 400px;
   padding: 24px;
   box-sizing: border-box;
+  background-color: #ffffff;
+   border-radius: 40px;
 }
+
+
 
 .logo-container {
   display: flex;
@@ -181,3 +186,25 @@ body {
   user-select: none;
   color: #64748b;
 }
+
+.bt2 {
+  grid-column: 1 / span 2;
+  margin-top: 1.5rem;
+  background-color: #5b7fff;
+  color: #ffffff;
+  border: none;
+  padding: 0.4rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+ cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: "Inter", sans-serif;
+  width: 50%;
+  margin-left: 5.5rem;
+}
+
+.bt2:hover {
+  background-color: #808bb4;
+}
+
