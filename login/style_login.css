@@ -140,8 +140,9 @@ margin-left: 8rem;
 
 .registro a {
   text-decoration: none !important;
-  color: #141415;
-  cursor: url('./img/gemini-svg.svg'), auto;
+  color: #4c5480;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
 }
 
 .registro a:hover {
@@ -150,6 +151,8 @@ margin-left: 8rem;
 
 .registro{
   margin-top: 1rem;
+  color: #4c5480;
+  font-family: "Inter", sans-serif;
 }
 
 /* Estado abierto del Popover nativo */
