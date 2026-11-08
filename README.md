@@ -137,8 +137,11 @@ Moneta es una plataforma donde el usuario registra **absolutamente todos sus gas
 
 | 👤 Integrante | 🎓 Rol |
 |---|---|
-| Luisa Fernanda carvajal| Santiago Valencia Jimenez | Miguel Angel Garcia Gualteros
-| Cristian Alvarez Lopez|Jhon Fredy Salazar|
+| Luisa Fernanda carvajal| Product Owner |
+| Santiago Valencia Jimenez | Developer 
+| Miguel Angel Garcia Gualteros | Developer |
+| Cristian Alvarez Lopez | Developer |
+| Jhon Fredy Salazar | Scrum Master |
 
 🏫 **Institución:** _por completar_
 👩‍🏫 **Docente:** _por completar_
