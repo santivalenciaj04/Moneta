@@ -154,15 +154,13 @@ color: #4c5480;
 }
 
 .registro a {
-  text-decoration: none !important;
-  color: #4c5480;
-  cursor: pointer;
-  font-family: "Inter", sans-serif;
+  color:#2f5bff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.registro a:hover {
-  font-weight: bold;
-}
+
 
 .registro{
   margin-top: 1rem;
