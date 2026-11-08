@@ -67,6 +67,8 @@
    a las etiquetas de los campos extendidos.
    ========================================================== */
 
+
+
   .logo-f-container h2 {
   font-family: "Space Grotesk", sans-serif;
   color: #0a192f; 
@@ -74,6 +76,13 @@
   font-size: 1.75rem;
   text-align: center;
   
+}
+
+.form3{
+  color: #10173a;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Space Grotesk", "Inter", sans-serif;
 }
 
 .p1 {
@@ -90,12 +99,18 @@
 .texto-1 .p2 {
     margin-left: 11rem;
     margin-top: 6rem;
-    
+    font-family: "Space Grotesk", sans-serif;
+    color: #10173a;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 .texto-1 .p3 {
 margin-left: 8rem;
+font-family: "Inter", sans-serif;
+color: #4c5480;
 }
+
 
 
 #correo{
@@ -139,17 +154,18 @@ margin-left: 8rem;
 }
 
 .registro a {
-  text-decoration: none !important;
-  color: #141415;
-  cursor: url('./img/gemini-svg.svg'), auto;
+  color:#2f5bff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.registro a:hover {
-  font-weight: bold;
-}
+
 
 .registro{
   margin-top: 1rem;
+  color: #4c5480;
+  font-family: "Inter", sans-serif;
 }
 
 /* Estado abierto del Popover nativo */
