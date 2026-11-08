@@ -143,8 +143,7 @@ Moneta es una plataforma donde el usuario registra **absolutamente todos sus gas
 | Cristian Alvarez Lopez | Developer |
 | Jhon Fredy Salazar | Scrum Master |
 
-🏫 **Institución:** _por completar_
-👩‍🏫 **Docente:** _por completar_
+🏫 **Institución:** _CESDE_
 
 ---
 
