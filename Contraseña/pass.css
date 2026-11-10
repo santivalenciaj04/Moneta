@@ -11,13 +11,12 @@ body {
 }
 
 .main-container {
-  width: 40%;
-  height: 80vh;
-  max-width: 400px;
-  padding: 24px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-   border-radius: 40px;
+  display: flex;
+    flex-direction: column;
+    height: auto; /* IMPORTANTE: Cambia cualquier 'height' fijo por 'auto' */
+    min-height: max-content; /* Asegura que no se colapse */
+    padding: 20px; /* Espaciado interno para que respire el contenido */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
 
