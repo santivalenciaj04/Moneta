@@ -6,6 +6,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+ 
 
   <title>Crea tu contraseña - Moneta</title>
   <link rel="stylesheet" href="pass.css">
@@ -17,27 +21,13 @@
 
     <!-- Logo Moneta -->
      <div class="fondo">
-    <div class="logo-container logo-top">
-      <div class="logo-icon">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#2563eb"/>
-              <stop offset="100%" stop-color="#1e3a8a"/>
-            </linearGradient>
-          </defs>
-          <rect width="32" height="32" rx="9" fill="url(#bgGrad)"/>
-          <rect x="5" y="8" width="22" height="18" rx="4" stroke="#ffffff" stroke-width="2.5" fill="none"/>
-          <path d="M9 21V13L13 17L17 13V21" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="18" y="3" width="8" height="6" rx="2" fill="#10b981"/>
-        </svg>
-      </div>
-      <span class="logo-text">Moneta</span>
-    </div>
+   
 
     <h1 class="title">Crea tu contraseña</h1>
 
-    <!-- Formulario con validación nativa HTML5 -->
+    <h3 class="text_logo">Es tu primer ingreso. Elige una contraseña segura.</h3>
+
+       <!-- Formulario con validación nativa HTML5 -->
     <form class="password-form" id="passwordForm">
       
       <!-- Cuadro de Requisitos de Contraseña -->
@@ -72,8 +62,10 @@
       </div>
 
       <!-- Campo 1: Escribe tu contraseña -->
+       <label class="form_label"for="password">Contraseña</label>
       <div class="input-group input-wrapper">
         <input type="checkbox" id="toggle-pass1" class="toggle-checkbox">
+        
         
         <input 
           type="password" 
@@ -106,6 +98,7 @@
       </div>
 
       <!-- Campo 2: Repite tu contraseña -->
+        <label class="form_label" for="confirm-password">Confirmar contraseña</label>
       <div class="input-group input-wrapper">
         <input type="checkbox" id="toggle-pass2" class="toggle-checkbox">
 
