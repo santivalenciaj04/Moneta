@@ -69,13 +69,12 @@
 
 
 
-  .logo-f-container h2 {
+  .logo-f h2 {
   font-family: "Space Grotesk", sans-serif;
   color: #0a192f; 
   font-weight: 700;
-  font-size: 1.75rem;
-  text-align: center;
-  
+  font-size: 1.3rem;
+  margin-left: -0.5rem;
 }
 
 .form3{
